@@ -1,0 +1,178 @@
+.video-section {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.video-section:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70%;
+  background: rgba(7, 41, 77, 0.98);
+}
+
+.video-section:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70%;
+  background: rgba(7, 41, 77, 0.98);
+  z-index: -1;
+  background-image: url("./images/bg/cta-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-section .section-heading h3, .video-section .section-heading .subheading {
+  color: #fff;
+}
+
+.video-block {
+  position: relative;
+}
+
+.video-block:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 41, 77, 0.4);
+}
+
+.video-block:after {
+  position: absolute;
+  content: "";
+  background: #0F8D8C;
+  left: 0px;
+  right: 0px;
+  bottom: -32px;
+  width: 80%;
+  height: 30%;
+  z-index: -1;
+  opacity: .3;
+  margin: 0px auto;
+}
+
+.video-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  text-align: center;
+  padding-top: 36px;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #0F8D8C;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.video-icon::after, .video-icon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+
+.video-icon::before {
+  -webkit-animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
+}
+
+.video-icon::after {
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
+}
+
+.video-icon:hover {
+  background-color: #0F8D8C;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.75);
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.75);
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.video-section2 {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0px;
+  background: #e8e8e8;
+}
+
+.video-section2 .section-heading {
+  padding-right: 43px;
+  margin-bottom: 0px;
+}
+
+.video-section2 .section-heading h3 {
+  font-size: 60px;
+}
+
+.video-section2 .video-block-container {
+  background-image: url("./images/bg/cta-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0px;
+  height: 100%;
+}
+
+.video-section2 .video-block-container:before {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 41, 77, 0.9);
+  z-index: 1;
+}
