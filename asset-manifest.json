@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rozmowni/static/css/main.b627d958.chunk.css",
+    "main.js": "/rozmowni/static/js/main.4516d734.chunk.js",
+    "main.js.map": "/rozmowni/static/js/main.4516d734.chunk.js.map",
+    "runtime-main.js": "/rozmowni/static/js/runtime-main.7a15a105.js",
+    "runtime-main.js.map": "/rozmowni/static/js/runtime-main.7a15a105.js.map",
+    "static/js/2.4624233b.chunk.js": "/rozmowni/static/js/2.4624233b.chunk.js",
+    "static/js/2.4624233b.chunk.js.map": "/rozmowni/static/js/2.4624233b.chunk.js.map",
+    "static/js/3.3da33c3c.chunk.js": "/rozmowni/static/js/3.3da33c3c.chunk.js",
+    "static/js/3.3da33c3c.chunk.js.map": "/rozmowni/static/js/3.3da33c3c.chunk.js.map",
+    "index.html": "/rozmowni/index.html",
+    "static/css/main.b627d958.chunk.css.map": "/rozmowni/static/css/main.b627d958.chunk.css.map",
+    "static/js/2.4624233b.chunk.js.LICENSE.txt": "/rozmowni/static/js/2.4624233b.chunk.js.LICENSE.txt",
+    "static/media/Teachers.css": "/rozmowni/static/media/gray-bg.6e2f4a3c.png",
+    "static/media/Video.css": "/rozmowni/static/media/cta-bg.3b2efc4d.jpg",
+    "static/media/Banner.css": "/rozmowni/static/media/smiley-face.4e71773e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a15a105.js",
+    "static/js/2.4624233b.chunk.js",
+    "static/css/main.b627d958.chunk.css",
+    "static/js/main.4516d734.chunk.js"
+  ]
+}
