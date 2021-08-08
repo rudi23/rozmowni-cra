@@ -24,7 +24,7 @@ export default function CoursesGroup() {
                                         <span className="course-duration"><i className="bi bi-alarm-clock"/>45 min.</span>
                                     </div>
 
-                                    <div className="course-price">4 x 425 zł</div>
+                                    <div className="course-price">4 x 510 zł</div>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ export default function CoursesGroup() {
                                         <span className="course-duration"><i className="bi bi-alarm-clock"/>45 min.</span>
                                     </div>
 
-                                    <div className="course-price">4 x 625 zł</div>
+                                    <div className="course-price">4 x 750 zł</div>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ export default function CoursesGroup() {
                                         <span className="course-duration"><i className="bi bi-alarm-clock"/>45 min.</span>
                                     </div>
 
-                                    <div className="course-price">4 x 375 zł</div>
+                                    <div className="course-price">4 x 450 zł</div>
                                 </div>
                             </div>
                         </div>
@@ -70,6 +70,7 @@ export default function CoursesGroup() {
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-12">
                         <div className="center-heading">
+                            <p>Konwersacje, angielski ogólny (General English), przygotowanie do egzaminów, angielski w biznesie (Business English)</p>
                             <p>Zajęcia odbywają się raz lub dwa razy w tygodniu.</p>
                             <p>Płatności w 4 ratach.</p>
                         </div>

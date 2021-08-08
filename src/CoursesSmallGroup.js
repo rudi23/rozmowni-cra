@@ -24,7 +24,7 @@ export default function CoursesGroup() {
                                         <span className="course-duration"><i className="bi bi-alarm-clock"/>45 min.</span>
                                     </div>
 
-                                    <div className="course-price">45 zł</div>
+                                    <div className="course-price">50 zł</div>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ export default function CoursesGroup() {
                                         <span className="course-duration"><i className="bi bi-alarm-clock"/>45 min.</span>
                                     </div>
 
-                                    <div className="course-price">40 zł</div>
+                                    <div className="course-price">45 zł</div>
                                 </div>
                             </div>
                         </div>
@@ -60,9 +60,19 @@ export default function CoursesGroup() {
                                         <span className="course-duration"><i className="bi bi-alarm-clock"/>45 min.</span>
                                     </div>
 
-                                    <div className="course-price">35 zł</div>
+                                    <div className="course-price">40 zł</div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row align-items-center justify-content-center">
+                    <div className="col-lg-12">
+                        <div className="center-heading">
+                            <p>Konwersacje, angielski ogólny (General English), przygotowanie do egzaminów, angielski w biznesie (Business English)</p>
+                            <p>Zajęcia odbywają się raz lub dwa razy w tygodniu.</p>
+                            <p>Płatność dokonywana jest za miesiąc z góry.</p>
                         </div>
                     </div>
                 </div>
