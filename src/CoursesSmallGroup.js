@@ -14,10 +14,6 @@ export default function CoursesGroup() {
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="course-block course-style-2">
-                            <div className="course-img">
-                                <img src="assets/images/2-people.jpg" alt="" className="img-fluid" />
-                            </div>
-
                             <div className="course-content">
                                 <h4>Konwersacje</h4>
                                 <h5>grupa 2-osobowa</h5>
@@ -36,10 +32,6 @@ export default function CoursesGroup() {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="course-block course-style-2">
-                            <div className="course-img">
-                                <img src="assets/images/3-people.jpg" alt="" className="img-fluid" />
-                            </div>
-
                             <div className="course-content">
                                 <h4>Konwersacje</h4>
                                 <h5>grupa 3-osobowa</h5>
@@ -58,10 +50,6 @@ export default function CoursesGroup() {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="course-block course-style-2">
-                            <div className="course-img">
-                                <img src="assets/images/4-people.jpg" alt="" className="img-fluid" />
-                            </div>
-
                             <div className="course-content">
                                 <h4>Konwersacje</h4>
                                 <h5>grupa 4-osobowa</h5>

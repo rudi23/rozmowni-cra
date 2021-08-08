@@ -14,10 +14,6 @@ export default function CoursesIndividual() {
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-12">
                         <div className="course-block course-style-2">
-                            <div className="course-img">
-                                <img src="assets/images/people-talking.jpg" alt="" className="img-fluid" />
-                            </div>
-
                             <div className="course-content">
                                 <h4>Spotkania indywidualne</h4>
 
