@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Responsive images
+
+Full width
+```jsx
+<img src="//placehold.it/960x500" 
+     className="img-fluid"
+     srcSet="//placehold.it/1140x500 1140w, //placehold.it/960x500 960w, //placehold.it/540x500 540w"
+     sizes="(min-width: 1200px) 1140px, (min-width: 992px) 960px, (min-width: 768px) 720px, 540px" 
+/>
+```
+Bootstrap sizes: `xl`, `lg`, `md`, `sm/xs`
+
+_ | xl (>=1200px) | lg (>=992px) | md (>=768px) | sm/xs (<768px)
+--- | :---: | :---: | :---: | :---:
+col-12 | 1110 | 930 | 690 | 510
+col-11 | 1005 | 850 | 630 | 465
+col-10 | 920  | 770 | 570 | 420
+col-9  | 825  | 690 | 510 | 375
+col-8  | 730  | 610 | 450 | 330
+col-7  | 635  | 530 | 390 | 285
+col-6  | 540  | 450 | 330 | 240
+col-5  | 445  | 370 | 270 | 195
+col-4  | 350  | 290 | 210 | 150
+col-3  | 255  | 210 | 150 | 105
+col-2  | 160  | 130 | 90  | 60
+col-1  | 65   | 50  | 30  | 15
+
+Values include 60px padding and margin of container and
+30px padding and margin of row

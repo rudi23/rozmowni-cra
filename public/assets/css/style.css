@@ -654,16 +654,7 @@ Banner 6
   position: relative;
 }
 
-.banner-img3:before {
-  position: absolute;
-  content: "";
-  right: 0px;
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-bottom: 200px solid rgba(38, 59, 94, 0.2);
-  border-left: 200px solid transparent;
-}
+
 
 .banner-shape-1 {
   position: absolute;
@@ -2228,7 +2219,6 @@ Testimonial style for home5
 .img-block {
   position: relative;
   z-index: 2;
-  padding-right: 20px;
   padding-bottom: 20px;
 }
 
