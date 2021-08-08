@@ -6,7 +6,7 @@ export default function Banner() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-8 col-xl-8 order-lg-2">
-                        <div className="img-block">
+                        <div className="img-block ml-n3 mr-n3">
                             <img src="assets/images/main.jpg" alt="" className="img-fluid" />
                         </div>
                     </div>
