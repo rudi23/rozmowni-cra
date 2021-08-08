@@ -19,7 +19,17 @@ export default function Conversations() {
                             Od pierwszych zajęć staramy się aby uczniowie jak najwięcej mówili po angielsku.</p>
 
                         <p>Tematy konwersacji są dobrane do poziomu, wieku oraz zainteresowań uczniów.</p>
+                    </div>
+                    <div className="col-lg-6 col-md-12">
+                        <div className="about-img2">
+                            <img src="assets/images/conversations.jpg" alt="" className="img-fluid" />
+                        </div>
+                    </div>
+                </div>
 
+
+                <div className="row align-items-center">
+                    <div className="col-12">
                         <h3 className="mb-3">Tematy konwersacji</h3>
 
                         <div className="edutim-course-topic">
@@ -135,11 +145,6 @@ export default function Conversations() {
                         </div>
 
                         <a href="#" className="btn btn-main"><i className="fa fa-check mr-2" />Porozmawiaj z nami</a>
-                    </div>
-                    <div className="col-lg-6 col-md-12">
-                        <div className="about-img2">
-                            <img src="assets/images/conversations.jpg" alt="" className="img-fluid" />
-                        </div>
                     </div>
                 </div>
             </div>
