@@ -21,7 +21,7 @@ function App() {
       <Features />
       <About />
       <Conversations />
-      <Video />
+      {/*<Video />*/}
       <CoursesIndividual />
       <CoursesGroup />
       <CoursesSmallGroup />
