@@ -6,7 +6,7 @@ export default function About() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">
-                        <div className="about-img2">
+                        <div className="img-block">
                             <img src="assets/images/lifelong-learning.jpg" alt="" className="img-fluid" />
                         </div>
                     </div>

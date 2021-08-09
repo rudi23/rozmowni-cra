@@ -21,7 +21,7 @@ export default function Conversations() {
                         <p>Tematy konwersacji są dobrane do poziomu, wieku oraz zainteresowań uczniów.</p>
                     </div>
                     <div className="col-lg-6 col-md-12">
-                        <div className="about-img2">
+                        <div className="img-block">
                             <img src="assets/images/conversations.jpg" alt="" className="img-fluid" />
                         </div>
                     </div>

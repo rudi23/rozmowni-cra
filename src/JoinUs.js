@@ -7,7 +7,7 @@ export default function JoinUs() {
                 <div className="row align-items-center">
 
                     <div className="col-lg-6 col-md-12">
-                        <div className="join-img">
+                        <div className="join-img img-block">
                             <img src="assets/images/join-us.jpg" alt="" className="img-fluid" />
                         </div>
                     </div>
