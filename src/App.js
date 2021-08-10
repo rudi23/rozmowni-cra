@@ -11,6 +11,7 @@ import Testimonials from './Testimonials';
 import Video from './Video';
 import Idea from './Idea';
 import Conversations from './Conversations';
+import AboutUs from './AboutUs';
 import JoinUs from './JoinUs';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <CoursesIndividual />
       <CoursesGroup />
       <CoursesSmallGroup />
+      <AboutUs />
       <JoinUs />
       {/*<Facts />*/}
       {/*<Teachers />*/}
