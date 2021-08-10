@@ -65,7 +65,7 @@ export default function Conversations() {
                         ]}
                     />
 
-                    <a href="#" className="btn btn-main"><i className="fa fa-check mr-2" />Porozmawiaj z nami</a>
+                    <a href="#contact" className="btn btn-main"><i className="fa fa-check mr-2" />Porozmawiaj z nami</a>
                 </div>
             </div>
         </Section>

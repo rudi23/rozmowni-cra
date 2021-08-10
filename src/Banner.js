@@ -21,7 +21,7 @@ export default function Banner() {
                             <p>Niezależnie jaka jest Twoja motywacja - z chęcią będziemy Ci towarzyszyć w drodze do
                                 upragnionej płynności językowej.
                             </p>
-                            <a href="#" className="btn btn-main">Ucz się razem z nami <i
+                            <a href="#contact" className="btn btn-main">Ucz się razem z nami <i
                                 className="fa fa-angle-right ml-2" /></a>
                         </div>
                     </div>

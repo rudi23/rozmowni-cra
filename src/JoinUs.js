@@ -3,6 +3,7 @@ import './JoinUs.css'
 export default function JoinUs() {
     return (
         <section className="join-section section-padding pt-0">
+            <a id="contact" />
             <div className="container">
                 <div className="row align-items-center">
 

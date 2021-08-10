@@ -42,7 +42,7 @@ export default function Idea() {
                         czy filozofii.
                     </p>
 
-                    <a href="#" className="btn btn-main"><i className="fa fa-check mr-2" />Dołącz do nas</a>
+                    <a href="#contact" className="btn btn-main"><i className="fa fa-check mr-2" />Dołącz do nas</a>
                 </div>
             </div>
         </Section>
