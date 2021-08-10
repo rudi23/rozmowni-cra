@@ -7,8 +7,8 @@ export default function AboutUs() {
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-12">
                     <SectionHeading heading="O nas" subheading="Kim jesteśmy?" />
+                    <p>Nazywam się Małgorzata Rudowska i jestem założycielką szkoły językowej rozmowni.pl</p>
                     <p>
-                        Nazywam się Małgorzata Rudowska i jestem założycielką szkoły językowej rozmowni.pl
                         Od dziecka uczyłam się angielskiego, ale mimo tego, jako  młoda osoba bardzo wstydziłam się mówić w tym języku.
                         Pewnego dnia na swojej drodze spotkałam nauczyciela, który na zawsze zmienił mój sposób patrzenia na komunikowanie się w języku obcym.
                         Nasze lekcje nie wyglądały jak typowe zajęcia w szkolnej ławce. Zamiast rozwiązywania niezliczonych testów i przepisywania zdań z tablicy mój nauczyciel  przede wszystkim zachęcał mnie do rozmowy. Czytaliśmy ciekawe, różnorodne artykuły, które były później bazą do dyskusji.
