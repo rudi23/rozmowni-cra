@@ -14,13 +14,15 @@ function Footer() {
                                 .</p>
                             <ul className="list-inline footer-socials">
                                 <li className="list-inline-item">
-                                    <a href="https://www.facebook.com/Rozmownipl-141305311401481"> <i className="fab fa-facebook-f" /></a>
+                                    <a href="https://www.facebook.com/Rozmownipl-141305311401481"> <i
+                                        className="fab fa-facebook-f" /></a>
                                 </li>
                                 <li className="list-inline-item">
                                     <a href="https://www.instagram.com/rozmowni.pl/"> <i className="fab fa-instagram" /></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"> <i className="fab fa-linkedin" /></a>
+                                    <a href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"> <i
+                                        className="fab fa-linkedin" /></a>
                                 </li>
                             </ul>
                         </div>
@@ -30,12 +32,10 @@ function Footer() {
                         <div className="footer-widget mb-5 mb-lg-0">
                             <h5 className="widget-title">Rozmowni.pl</h5>
                             <ul className="list-unstyled footer-links">
-                                <li><a href="#">O nas</a></li>
-                                <li><a href="#">Kursy</a></li>
-                                <li><a href="#">Cennik</a></li>
-                                <li><a href="#">Kontakt</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#about-us">O nas</a></li>
+                                <li><a href="#individual-course">Kursy</a></li>
+                                <li><a href="#individual-course">Cennik</a></li>
+                                <li><a href="#contact">Kontakt</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,9 +43,9 @@ function Footer() {
                         <div className="footer-widget mb-5 mb-lg-0">
                             <h5 className="widget-title">Kursy</h5>
                             <ul className="list-unstyled footer-links">
-                                <li><a href="#">Matura</a></li>
-                                <li><a href="#">Matura</a></li>
-                                <li><a href="#">Bussiness English</a></li>
+                                <li><a href="#individual-course">Zajęcia indywidualne</a></li>
+                                <li><a href="#group-course">Zajęcia grupowe</a></li>
+                                <li><a href="#small-group-course">Małe grupy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -82,8 +82,10 @@ function Footer() {
             <div className="footer-btm">
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="copyright text-lg-center">
-                            <p>Copyright © 2021 by Rozmowni.pl | All Rights Reserved</p>
+                        <div className="col-12">
+                            <div className="copyright text-lg-center">
+                                <p>Copyright © 2021 by Rozmowni.pl | All Rights Reserved</p>
+                            </div>
                         </div>
                     </div>
                 </div>
