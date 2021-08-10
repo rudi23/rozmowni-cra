@@ -14,16 +14,13 @@ function Footer() {
                                 .</p>
                             <ul className="list-inline footer-socials">
                                 <li className="list-inline-item">
-                                    <a href="#"> <i className="fab fa-facebook-f" /></a>
+                                    <a href="https://www.facebook.com/Rozmownipl-141305311401481"> <i className="fab fa-facebook-f" /></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="#"> <i className="fab fa-twitter" /></a>
+                                    <a href="https://www.instagram.com/rozmowni.pl/"> <i className="fab fa-instagram" /></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="#"> <i className="fab fa-linkedin" /></a>
-                                </li>
-                                <li className="list-inline-item">
-                                    <a href="#"> <i className="fab fa-pinterest" /></a>
+                                    <a href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"> <i className="fab fa-linkedin" /></a>
                                 </li>
                             </ul>
                         </div>
