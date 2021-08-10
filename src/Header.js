@@ -21,22 +21,22 @@ function Header() {
                         <div className="collapse navbar-collapse" id="navbarMenu">
                             <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link js-scroll-trigger">
+                                    <a href="#about-us" className="nav-link js-scroll-trigger">
                                         O nas
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link js-scroll-trigger">
+                                    <a href="#individual-course" className="nav-link js-scroll-trigger">
                                         Kursy
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link js-scroll-trigger">
+                                    <a href="#individual-course" className="nav-link js-scroll-trigger">
                                         Cennik
                                     </a>
                                 </li>
                                 <li className="nav-item ">
-                                    <a href="#" className="nav-link">
+                                    <a href="#contact" className="nav-link">
                                         Kontakt
                                     </a>
                                 </li>
