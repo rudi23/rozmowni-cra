@@ -1,10 +1,13 @@
+import './components/Section'
 import './JoinUs.css'
+import Section from './components/Section';
+import SectionHeading from './components/SectionHeading';
 
 export default function JoinUs() {
     return (
-        <section className="join-section section-padding pt-0">
+        <>
             <a id="contact" />
-            <div className="container">
+            <Section>
                 <div className="row align-items-center">
 
                     <div className="col-lg-6 col-md-12">
@@ -13,16 +16,13 @@ export default function JoinUs() {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
-                        <div className="section-heading">
-                            <span className="subheading">Jak dołączyć?</span>
-                            <h3>Czekamy na Ciebie</h3>
-                        </div>
+                        <SectionHeading heading="Czekamy na Ciebie" subheading="Jak dołączyć?" />
 
                         <div className="join-content">
                             <div className="join-text-block">
                                 <i className="bi bi-article" />
                                 <h4><a href="#">Rozwiąż test kwalifikujący</a></h4>
-                                <p>Test pozwoli określić Twój poziom znajomości języka</p>
+                                <p>Test pozwoli określić Twój poziom znajomości języka angielskiego</p>
                             </div>
 
                             <div className="join-text-block">
@@ -33,7 +33,7 @@ export default function JoinUs() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </Section>
+        </>
     )
 }
