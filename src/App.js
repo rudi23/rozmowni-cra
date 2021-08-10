@@ -9,7 +9,7 @@ import Teachers from './Teachers';
 import Facts from './Facts';
 import Testimonials from './Testimonials';
 import Video from './Video';
-import About from './About';
+import Idea from './Idea';
 import Conversations from './Conversations';
 import JoinUs from './JoinUs';
 
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Banner />
       <Features />
-      <About />
+      <Idea />
       <Conversations />
       {/*<Video />*/}
       <CoursesIndividual />

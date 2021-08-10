@@ -64,9 +64,6 @@
   .course-meta {
     margin: 5px 0px 20px;
   }
-  .about-img {
-    margin-bottom: 40px;
-  }
   .section-heading {
     margin-bottom: 30px;
   }
@@ -119,9 +116,6 @@
     color: #fff;
     font-size: 17px;
     margin-bottom: 0px;
-  }
-  .about-content {
-    margin-bottom: 35px;
   }
   .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
     width: 48%;
@@ -346,14 +340,6 @@
   }
   .client-logo {
     margin-bottom: 30px;
-  }
-  .about-text-block {
-    padding-left: 20px;
-  }
-  .about-text-block i {
-    position: relative;
-    left: 0px;
-    top: 0px;
   }
   .subscribe-section {
     padding: 60px 20px;
