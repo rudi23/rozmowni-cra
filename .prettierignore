@@ -1,0 +1,9 @@
+node_modules
+build
+public/assets/vendors
+Documentation
+edutim
+Logo
+Photos
+package.json
+package-lock.json
