@@ -15,18 +15,21 @@ export default function Banner() {
                         <div className={styles.bannerContent}>
                             <h1>Mów płynnie po angielsku!</h1>
                             <p>Czy dobra znajomość angielskiego jest Ci niezbędna do zdobycia pracy marzeń?</p>
-                            <p>A może uczysz się lub studiujesz i zależy Ci na dobrych ocenach lub po prostu chcesz bez
+                            <p>
+                                A może uczysz się lub studiujesz i zależy Ci na dobrych ocenach lub po prostu chcesz bez
                                 ograniczeń podróżować po świecie?
                             </p>
-                            <p>Niezależnie jaka jest Twoja motywacja - z chęcią będziemy Ci towarzyszyć w drodze do
+                            <p>
+                                Niezależnie jaka jest Twoja motywacja - z chęcią będziemy Ci towarzyszyć w drodze do
                                 upragnionej płynności językowej.
                             </p>
-                            <a href="#contact" className="btn btn-main">Ucz się razem z nami <i
-                                className="fa fa-angle-right ml-2" /></a>
+                            <a href="#contact" className="btn btn-main">
+                                Ucz się razem z nami <i className="fa fa-angle-right ml-2" />
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

@@ -15,25 +15,25 @@ import AboutUs from './AboutUs';
 import JoinUs from './JoinUs';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Banner />
-      <Features />
-      <Idea />
-      <Conversations />
-      {/*<Video />*/}
-      <CoursesIndividual />
-      <CoursesGroup />
-      <CoursesSmallGroup />
-      <AboutUs />
-      <JoinUs />
-      {/*<Facts />*/}
-      {/*<Teachers />*/}
-      {/*<Testimonials />*/}
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+            <Banner />
+            <Features />
+            <Idea />
+            <Conversations />
+            {/*<Video />*/}
+            <CoursesIndividual />
+            <CoursesGroup />
+            <CoursesSmallGroup />
+            <AboutUs />
+            <JoinUs />
+            {/*<Facts />*/}
+            {/*<Teachers />*/}
+            {/*<Testimonials />*/}
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

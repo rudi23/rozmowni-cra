@@ -7,13 +7,23 @@ function Header() {
                 <nav className="navbar navbar-expand-lg">
                     <div className="container pl-3 pr-3">
                         <a className="navbar-brand" href="/">
-                            <img src="assets/images/logo-rozmowni.png" alt="logo rozmowni.pl" className="logo img-fluid" />
+                            <img
+                                src="assets/images/logo-rozmowni.png"
+                                alt="logo rozmowni.pl"
+                                className="logo img-fluid"
+                            />
                         </a>
 
                         {/* Toggler */}
-                        <button className="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
-                                aria-label="Toggle navigation">
+                        <button
+                            className="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarMenu"
+                            aria-controls="navbarMenu"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
                             <span className="fa fa-bars" />
                         </button>
 
@@ -50,17 +60,21 @@ function Header() {
 
                         <ul className="header-contact-right d-none d-lg-block">
                             <li>
-                                <a href="https://www.facebook.com/Rozmownipl-141305311401481"><i className="fab fa-facebook-f" /></a>
+                                <a href="https://www.facebook.com/Rozmownipl-141305311401481">
+                                    <i className="fab fa-facebook-f" />
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/rozmowni.pl/"><i className="fab fa-instagram" /></a>
+                                <a href="https://www.instagram.com/rozmowni.pl/">
+                                    <i className="fab fa-instagram" />
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;

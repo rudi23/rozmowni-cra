@@ -1,4 +1,4 @@
-import './Video.css'
+import './Video.css';
 
 export default function Video() {
     return (
@@ -25,5 +25,5 @@ export default function Video() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

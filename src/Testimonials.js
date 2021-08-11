@@ -18,15 +18,27 @@ export default function Testimonials() {
                             <div className="review-item">
                                 <div className="client-info">
                                     <i className="bi bi-quote"></i>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem aliquid
-                                        pariatur rerum. Deserunt, praesentium.
-                                        Adipisci, voluptates nihil debitis</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem
+                                        aliquid pariatur rerum. Deserunt, praesentium. Adipisci, voluptates nihil
+                                        debitis
+                                    </p>
                                     <div className="rating">
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="client-desc">
@@ -43,15 +55,27 @@ export default function Testimonials() {
                             <div className="review-item">
                                 <div className="client-info">
                                     <i className="bi bi-quote"></i>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem aliquid
-                                        pariatur rerum. Deserunt, praesentium.
-                                        Adipisci, voluptates nihil debitis</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem
+                                        aliquid pariatur rerum. Deserunt, praesentium. Adipisci, voluptates nihil
+                                        debitis
+                                    </p>
                                     <div className="rating">
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="client-desc">
@@ -65,19 +89,30 @@ export default function Testimonials() {
                                 </div>
                             </div>
 
-
                             <div className="review-item">
                                 <div className="client-info">
                                     <i className="bi bi-quote"></i>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem aliquid
-                                        pariatur rerum. Deserunt, praesentium.
-                                        Adipisci, voluptates nihil debitis</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem
+                                        aliquid pariatur rerum. Deserunt, praesentium. Adipisci, voluptates nihil
+                                        debitis
+                                    </p>
                                     <div className="rating">
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="client-desc">
@@ -95,5 +130,5 @@ export default function Testimonials() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

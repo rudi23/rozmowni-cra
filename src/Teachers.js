@@ -24,10 +24,20 @@ function Teachers() {
                                 <p>CEO, Developer</p>
                             </div>
                             <ul className="team-socials list-inline">
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-facebook-f" /></a>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-facebook-f" />
+                                    </a>
                                 </li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-twitter" /></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-linkedin" /></a>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-twitter" />
+                                    </a>
+                                </li>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-linkedin" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -42,10 +52,20 @@ function Teachers() {
                                 <p>Market Researcher</p>
                             </div>
                             <ul className="team-socials list-inline">
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-facebook-f" /></a>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-facebook-f" />
+                                    </a>
                                 </li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-twitter" /></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-linkedin" /></a>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-twitter" />
+                                    </a>
+                                </li>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-linkedin" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -60,10 +80,20 @@ function Teachers() {
                                 <p>Content Writter</p>
                             </div>
                             <ul className="team-socials list-inline">
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-facebook-f" /></a>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-facebook-f" />
+                                    </a>
                                 </li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-twitter" /></a></li>
-                                <li className="list-inline-item"><a href="#"><i className="fab fa-linkedin" /></a>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-twitter" />
+                                    </a>
+                                </li>
+                                <li className="list-inline-item">
+                                    <a href="#">
+                                        <i className="fab fa-linkedin" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -71,7 +101,7 @@ function Teachers() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Teachers;

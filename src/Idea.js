@@ -1,4 +1,4 @@
-import './components/SectionHeading'
+import './components/SectionHeading';
 import Section from './components/Section';
 import SectionHeading from './components/SectionHeading';
 
@@ -14,16 +14,17 @@ export default function Idea() {
                 <div className="col-lg-6 col-md-12">
                     <SectionHeading heading="Idea lifelong learning" subheading="Co nami kieruje?" />
 
-                    <p>W szkole językowej rozmowni.pl wierzymy w uczenie się przez całe życie (tzw. lifelong learning).
-                        Edukacja i ciągły rozwój są nam potrzebne, aby w szybko zmieniającym się świecie, czuć się
-                        jak ryba w wodzie.
-                        Pozwalają nam budować kompetencje przyszłości.</p>
+                    <p>
+                        W szkole językowej rozmowni.pl wierzymy w uczenie się przez całe życie (tzw. lifelong learning).
+                        Edukacja i ciągły rozwój są nam potrzebne, aby w szybko zmieniającym się świecie, czuć się jak
+                        ryba w wodzie. Pozwalają nam budować kompetencje przyszłości.
+                    </p>
 
                     <p>
-                        Staramy się rozmawiać na istotne tematy, które dotyczą nas wszystkich.
-                        Chcemy, aby nasi uczniowie umieli dobrze poradzić sobie w różnych sytuacjach życiowych
-                        oraz prowadzili wzbogacające dyskusje, poznawali odmienne punkty widzenia i wyrażali swoją
-                        opinię na różne tematy.
+                        Staramy się rozmawiać na istotne tematy, które dotyczą nas wszystkich. Chcemy, aby nasi
+                        uczniowie umieli dobrze poradzić sobie w różnych sytuacjach życiowych oraz prowadzili
+                        wzbogacające dyskusje, poznawali odmienne punkty widzenia i wyrażali swoją opinię na różne
+                        tematy.
                     </p>
 
                     <p>
@@ -38,13 +39,16 @@ export default function Idea() {
                         <li>chcemy być rozmowni</li>
                     </ul>
                     <p>
-                        dlatego będziemy poruszać tematy związane ze światem relacji społecznych, biznesu, coachingu
-                        czy filozofii.
+                        dlatego będziemy poruszać tematy związane ze światem relacji społecznych, biznesu, coachingu czy
+                        filozofii.
                     </p>
 
-                    <a href="#contact" className="btn btn-main"><i className="fa fa-check mr-2" />Dołącz do nas</a>
+                    <a href="#contact" className="btn btn-main">
+                        <i className="fa fa-check mr-2" />
+                        Dołącz do nas
+                    </a>
                 </div>
             </div>
         </Section>
-    )
+    );
 }

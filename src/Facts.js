@@ -14,7 +14,7 @@ function Facts() {
                 <div className="row counter-wrap counter-section ptb-40">
                     <div className="col-lg-3 col-md-6">
                         <div className="counter-item">
-                            <i className="ti-desktop"/>
+                            <i className="ti-desktop" />
                             <div className="count">
                                 <span className="counter h2">90</span>
                             </div>
@@ -23,7 +23,7 @@ function Facts() {
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className="counter-item">
-                            <i className="ti-agenda"/>
+                            <i className="ti-agenda" />
                             <div className="count">
                                 <span className="counter h2">1450</span>
                             </div>
@@ -33,7 +33,7 @@ function Facts() {
 
                     <div className="col-lg-3 col-md-6">
                         <div className="counter-item">
-                            <i className="ti-heart"/>
+                            <i className="ti-heart" />
                             <div className="count">
                                 <span className="counter h2">5697</span>
                             </div>
@@ -43,7 +43,7 @@ function Facts() {
 
                     <div className="col-lg-3 col-md-6">
                         <div className="counter-item">
-                            <i className="ti-microphone-alt"/>
+                            <i className="ti-microphone-alt" />
                             <div className="count">
                                 <span className="counter h2">24</span>
                             </div>
@@ -53,7 +53,7 @@ function Facts() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Facts;
