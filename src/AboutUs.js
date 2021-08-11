@@ -6,9 +6,18 @@ export default function AboutUs() {
         <>
             <a id="about-us" />
             <Section background="gray">
-                <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12">
+                <div className="row">
+                    <div className="col-12">
                         <SectionHeading heading="O nas" subheading="Kim jesteśmy?" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-6 col-md-12">
+                        <div className="img-block">
+                            <img src="assets/images/about-us.jpg" alt="" className="img-fluid" />
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12 order-md-1">
                         <p>Nazywam się Małgorzata Rudowska i jestem założycielką szkoły językowej rozmowni.pl</p>
                         <p>
                             Od dziecka uczyłam się angielskiego, ale mimo tego, jako młoda osoba bardzo wstydziłam się
@@ -33,11 +42,6 @@ export default function AboutUs() {
                             upragnionej płynności w rozmowie po angielsku.
                         </p>
                         <p>Do zobaczenia na lekcji!</p>
-                    </div>
-                    <div className="col-lg-6 col-md-12 order-md-1">
-                        <div className="img-block">
-                            <img src="assets/images/about-us.jpg" alt="" className="img-fluid" />
-                        </div>
                     </div>
                 </div>
             </Section>
