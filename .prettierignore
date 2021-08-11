@@ -1,6 +1,7 @@
 node_modules
 build
 public/assets/vendors
+public/assets/js/script.js
 Documentation
 edutim
 Logo
