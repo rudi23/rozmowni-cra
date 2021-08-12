@@ -1,4 +1,4 @@
-function Features() {
+export default function Features() {
     return (
         <section className="feature-2  mt--100">
             <div className="container">
@@ -52,5 +52,3 @@ function Features() {
         </section>
     );
 }
-
-export default Features;

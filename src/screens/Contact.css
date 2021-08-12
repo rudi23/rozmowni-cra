@@ -1,0 +1,36 @@
+.join-section .section-heading {
+  margin-bottom: 30px;
+}
+
+.join-text-block {
+  position: relative;
+  background: #f9f9f9;
+  padding: 25px 30px 15px 95px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.join-text-block i {
+  position: absolute;
+  font-size: 40px;
+  left: 25px;
+  top: 26px;
+  color: #0f8d8c;
+}
+
+.join-text-block h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.about-img2 {
+  padding-right: 30px;
+}
+
+.about-2 p {
+  margin-bottom: 30px;
+}
+
+.about-2 p.no-mb {
+  margin-bottom: 0.5rem;
+}

@@ -1,6 +1,6 @@
 import './Teachers.css';
 
-function Teachers() {
+export default function Teachers() {
     return (
         <section className="section-padding bg-grey team-2">
             <div className="container">
@@ -103,5 +103,3 @@ function Teachers() {
         </section>
     );
 }
-
-export default Teachers;

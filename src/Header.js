@@ -1,6 +1,7 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
-function Header() {
+export default function Header() {
     return (
         <header>
             <div className="site-navigation">
@@ -31,24 +32,24 @@ function Header() {
                         <div className="collapse navbar-collapse" id="navbarMenu">
                             <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
-                                    <a href="#about-us" className="nav-link js-scroll-trigger">
+                                    <Link to="/o-nas" className="nav-link js-scroll-trigger">
                                         O nas
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#individual-course" className="nav-link js-scroll-trigger">
+                                    <Link to="/kursy" className="nav-link js-scroll-trigger">
                                         Kursy
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#individual-course" className="nav-link js-scroll-trigger">
+                                    <Link tof="/cennik" className="nav-link js-scroll-trigger">
                                         Cennik
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item ">
-                                    <a href="#contact" className="nav-link">
+                                    <Link to="/kontakt" className="nav-link">
                                         Kontakt
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -76,5 +77,3 @@ function Header() {
         </header>
     );
 }
-
-export default Header;

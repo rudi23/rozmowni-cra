@@ -1,6 +1,7 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
-function Footer() {
+export default function Footer() {
     return (
         <section className="footer">
             <div className="container">
@@ -40,16 +41,16 @@ function Footer() {
                             <h5 className="widget-title">Rozmowni.pl</h5>
                             <ul className="list-unstyled footer-links">
                                 <li>
-                                    <a href="#about-us">O nas</a>
+                                    <Link to="/o-nas">O nas</Link>
                                 </li>
                                 <li>
-                                    <a href="#individual-course">Kursy</a>
+                                    <Link to="/kursy">Kursy</Link>
                                 </li>
                                 <li>
-                                    <a href="#individual-course">Cennik</a>
+                                    <Link to="/cennik">Cennik</Link>
                                 </li>
                                 <li>
-                                    <a href="#contact">Kontakt</a>
+                                    <Link to="/kontakt">Kontakt</Link>
                                 </li>
                             </ul>
                         </div>
@@ -59,13 +60,13 @@ function Footer() {
                             <h5 className="widget-title">Kursy</h5>
                             <ul className="list-unstyled footer-links">
                                 <li>
-                                    <a href="#individual-course">Zajęcia indywidualne</a>
+                                    <Link to="/kursy#individual-course">Zajęcia indywidualne</Link>
                                 </li>
                                 <li>
-                                    <a href="#group-course">Zajęcia grupowe</a>
+                                    <Link to="/kursy#group-course">Zajęcia grupowe</Link>
                                 </li>
                                 <li>
-                                    <a href="#small-group-course">Małe grupy</a>
+                                    <Link to="/kursy#small-group-course">Małe grupy</Link>
                                 </li>
                             </ul>
                         </div>
@@ -118,5 +119,3 @@ function Footer() {
         </section>
     );
 }
-
-export default Footer;

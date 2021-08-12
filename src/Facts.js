@@ -1,4 +1,4 @@
-function Facts() {
+export default function Facts() {
     return (
         <section className="section-padding video-section">
             <div className="container">
@@ -55,5 +55,3 @@ function Facts() {
         </section>
     );
 }
-
-export default Facts;
