@@ -5,7 +5,8 @@ import Contact from './screens/Contact';
 import Home from './screens/Home';
 import NotFound from './screens/NotFound';
 import AboutUs from './screens/AboutUs';
-import Courses from './screens/Courses';
+import CoursesIndividual from './screens/CoursesIndividual';
+import CoursesGroup from './screens/CoursesGroup';
 
 export default function App() {
     return (
@@ -16,16 +17,16 @@ export default function App() {
                     <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path="/kursy">
-                        <Courses />
+                    <Route exact path="/kursy/indywidualne">
+                        <CoursesIndividual />
                     </Route>
-                    <Route path="/cennik">
-                        <Courses />
+                    <Route exact path="/kursy/grupowe">
+                        <CoursesGroup />
                     </Route>
-                    <Route path="/kontakt">
+                    <Route exact path="/kontakt">
                         <Contact />
                     </Route>
-                    <Route path="/o-nas">
+                    <Route exact path="/o-nas">
                         <AboutUs />
                     </Route>
                     <Route path="*">

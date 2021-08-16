@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Banner.module.scss';
 
 export default function Banner() {
@@ -23,9 +24,9 @@ export default function Banner() {
                                 Niezależnie jaka jest Twoja motywacja - z chęcią będziemy Ci towarzyszyć w drodze do
                                 upragnionej płynności językowej.
                             </p>
-                            <a href="#contact" className="btn btn-main">
+                            <Link to="/kontakt" className="btn btn-main">
                                 Ucz się razem z nami <i className="fa fa-angle-right ml-2" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

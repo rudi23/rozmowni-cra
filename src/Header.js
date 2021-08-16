@@ -36,15 +36,26 @@ export default function Header() {
                                         O nas
                                     </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link to="/kursy" className="nav-link js-scroll-trigger">
+                                <li className="nav-item dropdown">
+                                    <div
+                                        className="nav-link dropdown-toggle"
+                                        id="navbar3"
+                                        role="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
                                         Kursy
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link tof="/cennik" className="nav-link js-scroll-trigger">
-                                        Cennik
-                                    </Link>
+                                        <i className="fa fa-angle-down" />
+                                    </div>
+                                    <div className="dropdown-menu" aria-labelledby="navbar3">
+                                        <Link to="/kursy/indywidualne" className="dropdown-item">
+                                            Indywidualne
+                                        </Link>
+                                        <Link to="/kursy/grupowe" className="dropdown-item">
+                                            Grupowe
+                                        </Link>
+                                    </div>
                                 </li>
                                 <li className="nav-item ">
                                     <Link to="/kontakt" className="nav-link">

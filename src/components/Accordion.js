@@ -1,17 +1,20 @@
+import cx from 'classnames';
+import styles from './Accordion.module.scss';
+
 export default function Accordion({ id = 'accordion', cards }) {
-    function renderCard({ id, parentId, items, title }) {
+    function renderCard({ id, parentId, items, title, content }) {
         return (
-            <div className="card">
-                <div className="card-header" id={`heading-${id}`}>
+            <div className={cx('card', styles.card)}>
+                <div className={cx('card-header', styles.cardHeader)} id={`heading-${id}`}>
                     <button
-                        className="btn-block text-left curriculmn-title-btn"
+                        className="btn-block text-left"
                         type="button"
                         data-toggle="collapse"
                         data-target={`#collapse-${id}`}
                         aria-expanded="false"
                         aria-controls={`collapse-${id}`}
                     >
-                        <h4 className="curriculmn-title">{title}</h4>
+                        <h4>{title}</h4>
                     </button>
                 </div>
 
@@ -21,23 +24,23 @@ export default function Accordion({ id = 'accordion', cards }) {
                     aria-labelledby={`heading-${id}`}
                     data-parent={`#${parentId}`}
                 >
-                    <div className="course-lessons">
-                        {items.map((item) => (
-                            <div className="single-course-lesson">
-                                <div className="course-topic-lesson">
-                                    <i className="fa fa-check"></i>
+                    {content && <div className={styles.content}>{content} </div>}
+                    {items &&
+                        items.map((item) => (
+                            <div className={styles.item}>
+                                <div>
+                                    <i className="fa fa-check" />
                                     <span>{item}</span>
                                 </div>
                             </div>
                         ))}
-                    </div>
                 </div>
             </div>
         );
     }
 
     return (
-        <div className="edutim-course-topic">
+        <div className={styles.root}>
             <div className="accordion" id={id}>
                 {cards.map((card) => renderCard({ ...card, parentId: id }))}
             </div>

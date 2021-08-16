@@ -44,12 +44,6 @@ export default function Footer() {
                                     <Link to="/o-nas">O nas</Link>
                                 </li>
                                 <li>
-                                    <Link to="/kursy">Kursy</Link>
-                                </li>
-                                <li>
-                                    <Link to="/cennik">Cennik</Link>
-                                </li>
-                                <li>
                                     <Link to="/kontakt">Kontakt</Link>
                                 </li>
                             </ul>
@@ -60,13 +54,10 @@ export default function Footer() {
                             <h5 className="widget-title">Kursy</h5>
                             <ul className="list-unstyled footer-links">
                                 <li>
-                                    <Link to="/kursy#individual-course">Zajęcia indywidualne</Link>
+                                    <Link to="/kursy/indywidualne">Zajęcia indywidualne</Link>
                                 </li>
                                 <li>
-                                    <Link to="/kursy#group-course">Zajęcia grupowe</Link>
-                                </li>
-                                <li>
-                                    <Link to="/kursy#small-group-course">Małe grupy</Link>
+                                    <Link to="/kursy/grupowe">Zajęcia grupowe</Link>
                                 </li>
                             </ul>
                         </div>

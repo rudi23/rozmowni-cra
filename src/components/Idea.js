@@ -1,4 +1,5 @@
 import './components/SectionHeading';
+import { Link } from 'react-router-dom';
 import Section from './components/Section';
 import SectionHeading from './components/SectionHeading';
 
@@ -43,10 +44,10 @@ export default function Idea() {
                         filozofii.
                     </p>
 
-                    <a href="#contact" className="btn btn-main">
+                    <Link to="/kontakt" className="btn btn-main">
                         <i className="fa fa-check mr-2" />
                         Dołącz do nas
-                    </a>
+                    </Link>
                 </div>
             </div>
         </Section>

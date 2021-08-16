@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import SectionHeading from './components/SectionHeading';
 import Section from './components/Section';
 import Accordion from './components/Accordion';
@@ -63,10 +64,10 @@ export default function Conversations() {
                         ]}
                     />
 
-                    <a href="#contact" className="btn btn-main">
+                    <Link to="/kontakt" className="btn btn-main">
                         <i className="fa fa-check mr-2" />
                         Porozmawiaj z nami
-                    </a>
+                    </Link>
                 </div>
             </div>
         </Section>
