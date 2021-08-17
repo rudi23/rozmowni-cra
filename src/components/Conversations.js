@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import SectionHeading from './components/SectionHeading';
-import Section from './components/Section';
-import Accordion from './components/Accordion';
+import SectionHeading from './SectionHeading';
+import Section from './Section';
+import Accordion from './Accordion';
 
 export default function Conversations() {
     return (

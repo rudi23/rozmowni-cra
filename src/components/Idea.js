@@ -1,7 +1,6 @@
-import './components/SectionHeading';
 import { Link } from 'react-router-dom';
-import Section from './components/Section';
-import SectionHeading from './components/SectionHeading';
+import Section from './Section';
+import SectionHeading from './SectionHeading';
 
 export default function Idea() {
     return (
