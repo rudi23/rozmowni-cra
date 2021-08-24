@@ -1470,10 +1470,6 @@ Course Style 2
 COURse Single Details
 ==============================*/
 .course-single-header {
-  margin-bottom: 40px;
-  overflow: hidden;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 30px;
 }
 
 .course-single-header .single-course-title {
