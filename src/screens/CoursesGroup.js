@@ -150,7 +150,7 @@ export default function CoursesGroup() {
                         <div className="col-lg-4">
                             <div className="course-sidebar">
                                 <div className="course-single-thumb">
-                                    <img src="/assets/images/course/course2.jpg" alt="" className="img-fluid w-100" />
+                                    <img src="/assets/images/course-group.jpg" alt="" className="img-fluid w-100" />
                                     <div className="course-price-wrapper">
                                         <div className="course-price ml-3">
                                             <h4>
