@@ -38,10 +38,6 @@ export default function Idea() {
                         <li>chcemy Was uczyć i uczyć się od Was</li>
                         <li>chcemy być rozmowni</li>
                     </ul>
-                    <p>
-                        dlatego będziemy poruszać tematy związane ze światem relacji społecznych, biznesu, coachingu czy
-                        filozofii.
-                    </p>
 
                     <Link to="/kontakt" className="btn btn-main">
                         <i className="fa fa-check mr-2" />
