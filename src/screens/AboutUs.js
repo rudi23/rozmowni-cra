@@ -9,7 +9,7 @@ export default function AboutUs() {
                 <div className="row">
                     <div className="col-lg-6 col-md-12">
                         <div className="img-block">
-                            <img src="assets/images/about-us.jpg" alt="" className="img-fluid" />
+                            <img src="/assets/images/about-us.jpg" alt="" className="img-fluid" />
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 order-md-1">

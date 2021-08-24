@@ -9,7 +9,7 @@ export default function Contact() {
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-12">
                     <div className="join-img img-block">
-                        <img src="assets/images/contact.png" alt="" className="img-fluid" />
+                        <img src="/assets/images/contact.png" alt="" className="img-fluid" />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-12">

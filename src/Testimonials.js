@@ -43,7 +43,7 @@ export default function Testimonials() {
                                 </div>
                                 <div className="client-desc">
                                     <div className="client-img">
-                                        <img src="assets/images/clients/test-1.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/images/clients/test-1.jpg" alt="" className="img-fluid" />
                                     </div>
                                     <div className="client-text">
                                         <h4>John Doe</h4>
@@ -80,7 +80,7 @@ export default function Testimonials() {
                                 </div>
                                 <div className="client-desc">
                                     <div className="client-img">
-                                        <img src="assets/images/clients/test-2.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/images/clients/test-2.jpg" alt="" className="img-fluid" />
                                     </div>
                                     <div className="client-text">
                                         <h4>John Doe</h4>
@@ -117,7 +117,7 @@ export default function Testimonials() {
                                 </div>
                                 <div className="client-desc">
                                     <div className="client-img">
-                                        <img src="assets/images/clients/test-3.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/images/clients/test-3.jpg" alt="" className="img-fluid" />
                                     </div>
                                     <div className="client-text">
                                         <h4>John Doe</h4>

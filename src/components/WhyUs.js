@@ -10,7 +10,7 @@ export default function WhyUs() {
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-12">
                     <div className="img-block">
-                        <img src="assets/images/why-us.jpg" alt="" className="img-fluid" />
+                        <img src="/assets/images/why-us.jpg" alt="" className="img-fluid" />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-12">

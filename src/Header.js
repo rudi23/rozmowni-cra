@@ -17,7 +17,7 @@ export default function Header() {
                     <div className="container pl-3 pr-3">
                         <a className="navbar-brand" href="/">
                             <img
-                                src="assets/images/logo-rozmowni.png"
+                                src="/assets/images/logo-rozmowni.png"
                                 alt="logo rozmowni.pl"
                                 className="logo img-fluid"
                             />

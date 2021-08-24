@@ -17,7 +17,7 @@ export default function Teachers() {
                     <div className="col-lg-4 col-sm-6">
                         <div className="team-block">
                             <div className="team-img">
-                                <img src="assets/images/team/team-4.jpg" alt="" className="img-fluid" />
+                                <img src="/assets/images/team/team-4.jpg" alt="" className="img-fluid" />
                             </div>
                             <div className="team-info">
                                 <h4>Harish Ham</h4>
@@ -45,7 +45,7 @@ export default function Teachers() {
                     <div className="col-lg-4 col-sm-6">
                         <div className="team-block">
                             <div className="team-img">
-                                <img src="assets/images/team/team-1.jpg" alt="" className="img-fluid" />
+                                <img src="/assets/images/team/team-1.jpg" alt="" className="img-fluid" />
                             </div>
                             <div className="team-info">
                                 <h4>Tanvir Hasan</h4>
@@ -73,7 +73,7 @@ export default function Teachers() {
                     <div className="col-lg-4 col-sm-6">
                         <div className="team-block">
                             <div className="team-img">
-                                <img src="assets/images/team/team-2.jpg" alt="" className="img-fluid" />
+                                <img src="/assets/images/team/team-2.jpg" alt="" className="img-fluid" />
                             </div>
                             <div className="team-info">
                                 <h4>Mikele John</h4>
