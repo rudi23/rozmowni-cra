@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import PageHeader from '../components/PageHeader';
 import Accordion from '../components/Accordion';
 import styles from './Course.module.scss';
@@ -24,11 +26,11 @@ export default function CoursesGroup() {
                                 <div className="course-widget course-info">
                                     <ul>
                                         <li>
-                                            <i className="fa fa-check" />
+                                            <FontAwesomeIcon icon={faCheck} />
                                             Lekcje raz w tygodniu
                                         </li>
                                         <li>
-                                            <i className="fa fa-check" />
+                                            <FontAwesomeIcon icon={faCheck} />
                                             Zajęcia trwają 90 min (2 lekcje)
                                         </li>
                                     </ul>

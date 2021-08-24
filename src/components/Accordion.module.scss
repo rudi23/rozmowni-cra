@@ -21,12 +21,15 @@
         font-size: 18px;
         margin-bottom: 0;
 
-        &:after {
+        .minusIcon {
+          visibility: hidden;
+        }
+        .plusIcon {
+          visibility: visible;
+        }
+
+        svg {
           position: absolute;
-          content: "\f067";
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          color: #0f8d8c;
           margin-left: 20px;
           font-size: 15px;
           top: 3px;
@@ -38,10 +41,13 @@
     button[aria-expanded="true"] {
       border-bottom: 0;
 
-      h4:after {
-        content: "\f068";
-        font-family: "Font Awesome 5 Free";
-        color: #0f8d8c;
+      h4 {
+        .minusIcon {
+          visibility: visible;
+        }
+        .plusIcon {
+          visibility: hidden;
+        }
       }
     }
   }
@@ -81,7 +87,7 @@
     font-size: 15px;
   }
 
-  i {
+  svg {
     margin-right: 10px;
     color: #0f8d8c;
   }

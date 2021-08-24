@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import SectionHeading from './SectionHeading';
 import Section from './Section';
 
@@ -26,7 +28,7 @@ export default function WhyUs() {
                     <p>Dobrze trafiłeś!</p>
 
                     <Link to="#" className="btn btn-main">
-                        <i className="fa fa-check mr-2" />
+                        <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Sprawdź co nas wyróżnia
                     </Link>
                 </div>

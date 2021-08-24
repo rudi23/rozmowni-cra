@@ -27,7 +27,7 @@ export default function Contact() {
                         <div className="join-text-block">
                             <i className="bi bi-support" />
                             <h4>
-                                <a href="#">Skontaktu się z nami</a>
+                                <a href="#">Skontaktuj się z nami</a>
                             </h4>
                             <p>Chętnie z Tobą porozmawiamy, odpowiadając na wszystkie Twoje pytania</p>
                         </div>

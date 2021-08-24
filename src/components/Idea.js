@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Section from './Section';
 import SectionHeading from './SectionHeading';
 
@@ -40,7 +42,7 @@ export default function Idea() {
                     </ul>
 
                     <Link to="/kontakt" className="btn btn-main">
-                        <i className="fa fa-check mr-2" />
+                        <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Dołącz do nas
                     </Link>
                 </div>

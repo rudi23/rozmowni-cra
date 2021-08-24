@@ -24,7 +24,11 @@
   color: #0f8d8c;
 }
 
-.navbar-nav .nav-link i {
+.navbar-nav .nav-link .icon {
+  margin-left: 5px;
+}
+
+.navbar-nav .nav-link .icon {
   margin-left: 5px;
 }
 
@@ -112,7 +116,21 @@ DROPDOWN MENU
   transition: all 0.4s ease;
 }
 
-.header-contact-right li i:hover {
+.header-contact-right li .icon {
+  display: inline-block;
+  line-height: 1;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #eee;
+  text-align: center;
+  padding-top: 14px;
+  border-radius: 100%;
+  background: #f9f9f9;
+  color: #0f8d8c;
+  transition: all 0.4s ease;
+}
+
+.header-contact-right li .icon:hover {
   background: #0f8d8c;
   border-color: #0f8d8c;
   color: #fff;

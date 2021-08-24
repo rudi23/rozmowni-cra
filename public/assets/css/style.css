@@ -1536,7 +1536,7 @@ COURse Single Details
   color: #222;
 }
 
-.single-course-details .course-info ul li i {
+.single-course-details .course-info ul li svg {
   position: absolute;
   left: 0px;
   top: 10px;
@@ -1589,7 +1589,7 @@ Course Topics
   font-size: 15px;
 }
 
-.single-course-lesson .course-topic-lesson i {
+.single-course-lesson .course-topic-lesson svg {
   margin-right: 10px;
   color: #0f8d8c;
 }

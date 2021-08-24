@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import SectionHeading from './SectionHeading';
 import Section from './Section';
 import Accordion from './Accordion';
@@ -65,7 +67,7 @@ export default function Conversations() {
                     />
 
                     <Link to="/kontakt" className="btn btn-main">
-                        <i className="fa fa-check mr-2" />
+                        <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Porozmawiaj z nami
                     </Link>
                 </div>

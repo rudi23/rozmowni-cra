@@ -1,5 +1,7 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
     return (
@@ -17,19 +19,25 @@ export default function Footer() {
                                 <li className="list-inline-item">
                                     <a href="https://www.facebook.com/Rozmownipl-141305311401481">
                                         {' '}
-                                        <i className="fab fa-facebook-f" />
+                                        <FontAwesomeIcon icon={faFacebookF} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
                                     <a href="https://www.instagram.com/rozmowni.pl/">
                                         {' '}
-                                        <i className="fab fa-instagram" />
+                                        <FontAwesomeIcon icon={faInstagram} />
+                                    </a>
+                                </li>
+                                <li className="list-inline-item">
+                                    <a href="https://www.tiktok.com/@rozmowni.pl">
+                                        {' '}
+                                        <FontAwesomeIcon icon={faTiktok} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
                                     <a href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/">
                                         {' '}
-                                        <i className="fab fa-linkedin" />
+                                        <FontAwesomeIcon icon={faLinkedin} />
                                     </a>
                                 </li>
                             </ul>

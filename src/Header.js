@@ -1,5 +1,13 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faBars } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookF, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faFacebookF);
+library.add(faInstagram);
+library.add(faTiktok);
 
 export default function Header() {
     return (
@@ -25,7 +33,9 @@ export default function Header() {
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
-                            <span className="fa fa-bars" />
+                            <span className="icon">
+                                <FontAwesomeIcon icon={faBars} />
+                            </span>
                         </button>
 
                         {/* Collapse */}
@@ -51,7 +61,9 @@ export default function Header() {
                                         aria-expanded="false"
                                     >
                                         Kursy
-                                        <i className="fa fa-angle-down" />
+                                        <span className="icon">
+                                            <FontAwesomeIcon icon={faAngleDown} />
+                                        </span>
                                     </div>
                                     <div className="dropdown-menu" aria-labelledby="navbar3">
                                         <Link to="/kursy/indywidualne" className="dropdown-item">
@@ -78,12 +90,23 @@ export default function Header() {
                         <ul className="header-contact-right d-none d-lg-block">
                             <li>
                                 <a href="https://www.facebook.com/Rozmownipl-141305311401481">
-                                    <i className="fab fa-facebook-f" />
+                                    <span className="icon">
+                                        <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/rozmowni.pl/">
-                                    <i className="fab fa-instagram" />
+                                    <span className="icon">
+                                        <FontAwesomeIcon icon={['fab', 'instagram']} />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@rozmowni.pl">
+                                    <span className="icon">
+                                        <FontAwesomeIcon icon={['fab', 'tiktok']} />
+                                    </span>
                                 </a>
                             </li>
                         </ul>

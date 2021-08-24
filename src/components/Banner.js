@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import styles from './Banner.module.scss';
 
 export default function Banner() {
@@ -18,7 +20,7 @@ export default function Banner() {
                             <h2>Indywidualne oraz grupowe kursy online</h2>
                             <p></p>
                             <Link to="/kontakt" className="btn btn-main">
-                                Ucz się razem z nami <i className="fa fa-angle-right ml-2" />
+                                Ucz się razem z nami <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
                             </Link>
                         </div>
                     </div>
