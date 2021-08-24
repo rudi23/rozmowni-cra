@@ -1,6 +1,6 @@
 export default function Features() {
     return (
-        <section className="feature-2  mt--100">
+        <section className="feature-2 mt--100">
             <div className="container">
                 <div className="row no-gutters">
                     <div className="col-lg-3 col-md-6">

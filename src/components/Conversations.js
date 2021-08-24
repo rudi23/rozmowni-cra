@@ -5,7 +5,7 @@ import Accordion from './Accordion';
 
 export default function Conversations() {
     return (
-        <Section background="gray">
+        <Section>
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-12">
                     <SectionHeading heading="Konwersacje" subheading="Jak uczymy?" />

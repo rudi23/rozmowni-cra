@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading';
 
 export default function Idea() {
     return (
-        <Section>
+        <Section background="gray">
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-12">
                     <div className="img-block">
