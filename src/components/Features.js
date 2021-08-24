@@ -6,7 +6,7 @@ export default function Features() {
                     <div className="col-lg-3 col-md-6">
                         <div className="feature-item feature-style-2">
                             <div className="feature-icon">
-                                <i className="bi bi-badge2" />
+                                <i className="bi bi-chat-bubble-single" />
                             </div>
                             <div className="feature-text">
                                 <h4>Konwersacje</h4>
