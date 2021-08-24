@@ -66,7 +66,7 @@ export default function Conversations() {
                         ]}
                     />
 
-                    <Link to="/kontakt" className="btn btn-main">
+                    <Link to="/kontakt" className="btn btn-main mt-4">
                         <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Porozmawiaj z nami
                     </Link>

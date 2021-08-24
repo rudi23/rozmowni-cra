@@ -18,8 +18,7 @@ export default function Banner() {
                         <div className={styles.bannerContent}>
                             <h1>Mów swobodnie po angielsku!</h1>
                             <h2>Indywidualne oraz grupowe kursy online</h2>
-                            <p></p>
-                            <Link to="/kontakt" className="btn btn-main">
+                            <Link to="/kontakt" className="btn btn-main mt-4">
                                 Ucz się razem z nami <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
                             </Link>
                         </div>
