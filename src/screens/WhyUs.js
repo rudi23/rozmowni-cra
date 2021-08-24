@@ -9,8 +9,9 @@ export default function WhyUs() {
                 <div className="row">
                     <div className="col-lg-12 col-md-12 order-md-1">
                         <p>
-                            Szkoła rozmowni.pl jest dla Ciebie jeśli chcesz nie tylko podnosić swój poziom angielskiego,
-                            ale także rozmawiać swobodnie po angielsku na ważne dla Ciebie tematy związane z:
+                            Szkoła rozmowni.pl jest dla Ciebie, jeśli chcesz nie tylko podnosić swój poziom
+                            angielskiego, ale także rozmawiać swobodnie po angielsku na ważne dla Ciebie tematy związane
+                            z:
                             <ul className="pt-2">
                                 <li>rozwojem osobistym</li>
                                 <li>psychologią</li>
@@ -29,7 +30,7 @@ export default function WhyUs() {
                         </p>
 
                         <p>
-                            Szkoła rozmowni.pl jest dla Ciebie jeśli chcesz uczyć się angielskiego i równocześnie
+                            Szkoła rozmowni.pl jest dla Ciebie, jeśli chcesz uczyć się angielskiego i równocześnie
                             ćwiczyć KOMPETENCJE PRZYSZŁOŚCI takie jak:
                             <ul className="pt-2">
                                 <li>radzenie sobie z trudnymi emocjami np wstydem (przełamywanie bariery językowej)</li>
@@ -47,13 +48,13 @@ export default function WhyUs() {
                         </p>
 
                         <p>
-                            Szkoła rozmowni.pl jest dla Ciebie jeśli odpowiada Ci przyjazna atmosfera bez szkolnych ocen
-                            i testów, za to ze wsparciem i uśmiechem. W przyjaznym środowisku, zachęcającym do otwarcia
-                            się, popełniania błędów i eksperymentowania!
+                            Szkoła rozmowni.pl jest dla Ciebie, jeśli odpowiada Ci przyjazna atmosfera bez szkolnych
+                            ocen i testów, za to ze wsparciem i uśmiechem. W przyjaznym środowisku, zachęcającym do
+                            otwarcia się, popełniania błędów i eksperymentowania!
                         </p>
 
                         <p>
-                            Szkoła rozmowni.pl jest dla Ciebie jeśli przygotowujesz się do egzaminu:
+                            Szkoła rozmowni.pl jest dla Ciebie, jeśli przygotowujesz się do egzaminu:
                             <ul className="pt-2">
                                 <li>ósmoklasisty</li>
                                 <li>maturalnego</li>
@@ -63,7 +64,7 @@ export default function WhyUs() {
                         </p>
 
                         <p>
-                            Szkoła rozmowni.pl jest dla Ciebie jeśli:
+                            Szkoła rozmowni.pl jest dla Ciebie, jeśli:
                             <ul className="pt-2">
                                 <li>dobra znajomość angielskiego jest Ci potrzebna do zdobycia pracy marzeń</li>
                                 <li>uczysz się lub studiujesz i zależy Ci na dobrych ocenach</li>
