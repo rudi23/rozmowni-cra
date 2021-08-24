@@ -9,8 +9,11 @@ export default function Features() {
                                 <i className="bi bi-badge2" />
                             </div>
                             <div className="feature-text">
-                                <h4>Jakość nauczania</h4>
-                                <p>Wysoko kwalifikowani lektorzy z bogatym doświadczeniem</p>
+                                <h4>Konwersacje</h4>
+                                <p>
+                                    Tematy związane z rozwojem osobistym, psychologią, coachingiem, relacjami, wiedzą o
+                                    świecie
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -21,7 +24,10 @@ export default function Features() {
                             </div>
                             <div className="feature-text">
                                 <h4>Ciekawe zajęcia</h4>
-                                <p>Różnorodność tematyki rozmów oraz ćwiczeń językowych</p>
+                                <p>
+                                    Poruszamy tematy kontrowersyjne, które zachęcą cię do kreowania swojej opinii i
+                                    sprowokują do dyskusji
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -32,7 +38,7 @@ export default function Features() {
                             </div>
                             <div className="feature-text">
                                 <h4>Nauczanie on-line</h4>
-                                <p>Możliwość zajęć zdalnych, z dowolnego miejsca</p>
+                                <p>Możliwość zajęć zdalnych, z dowolnego miejsca za pomocą platformy Zoom lub Skype</p>
                             </div>
                         </div>
                     </div>
