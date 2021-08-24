@@ -774,7 +774,6 @@ Clientns Partners
 
 .contact__form .form-control {
   height: 55px;
-  border-radius: 46px;
   padding-left: 20px;
   border: 2px solid #eee;
   background: #eee;
@@ -790,7 +789,6 @@ Clientns Partners
 
 .contact__form textarea.form-control {
   height: auto;
-  border-radius: 15px;
   padding-top: 15px;
 }
 
