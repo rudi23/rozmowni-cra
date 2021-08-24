@@ -32,6 +32,11 @@ export default function Header() {
                         <div className="collapse navbar-collapse" id="navbarMenu">
                             <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
+                                    <Link to="/dlaczego-my" className="nav-link js-scroll-trigger">
+                                        Dlaczego my?
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link to="/o-nas" className="nav-link js-scroll-trigger">
                                         O nas
                                     </Link>

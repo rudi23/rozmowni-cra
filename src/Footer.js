@@ -41,6 +41,9 @@ export default function Footer() {
                             <h5 className="widget-title">Rozmowni.pl</h5>
                             <ul className="list-unstyled footer-links">
                                 <li>
+                                    <Link to="/dlaczego-my">Dlaczego my?</Link>
+                                </li>
+                                <li>
                                     <Link to="/o-nas">O nas</Link>
                                 </li>
                                 <li>

@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Contact from './screens/Contact';
 import Home from './screens/Home';
+import WhyUs from './screens/WhyUs';
 import NotFound from './screens/NotFound';
 import AboutUs from './screens/AboutUs';
 import CoursesIndividual from './screens/CoursesIndividual';
@@ -16,6 +17,9 @@ export default function App() {
                 <Switch>
                     <Route exact path="/">
                         <Home />
+                    </Route>
+                    <Route exact path="/dlaczego-my">
+                        <WhyUs />
                     </Route>
                     <Route exact path="/kursy/indywidualne">
                         <CoursesIndividual />
