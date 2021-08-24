@@ -10,8 +10,8 @@ export default function Footer() {
                         <div className="widget footer-widget mb-5 mb-lg-0">
                             <h5 className="widget-title">O nas</h5>
                             <p className="mt-3">
-                                Veniam Sequi molestias aut necessitatibus optio magni at natus accusamus.Lorem ipsum
-                                dolor sit amet, consectetur adipisicin gelit, sed do eiusmod tempor incididunt .
+                                Szkoła językowa rozmowni.pl jest dla Ciebie jeśli chcesz nie tylko podnosić swój poziom
+                                angielskiego, ale także rozmawiać swobodnie po angielsku na tematy ważne dla Ciebie.
                             </p>
                             <ul className="list-inline footer-socials">
                                 <li className="list-inline-item">
