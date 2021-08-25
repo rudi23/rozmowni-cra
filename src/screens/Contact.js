@@ -21,9 +21,22 @@ export default function Contact() {
                                 <h4>Śledź nas w social media</h4>
                                 <p>
                                     Zapraszamy na nasze profile na{' '}
-                                    <a href="https://www.facebook.com/Rozmownipl-141305311401481">Facebooku</a>,{' '}
-                                    <a href="https://www.instagram.com/rozmowni.pl/">Instagramie</a> oraz{' '}
-                                    <a href="https://www.tiktok.com/@rozmowni.pl">TikToku</a>.
+                                    <a
+                                        href="https://www.facebook.com/Rozmownipl-141305311401481"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        Facebooku
+                                    </a>
+                                    ,{' '}
+                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noopener">
+                                        Instagramie
+                                    </a>{' '}
+                                    oraz{' '}
+                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noopener">
+                                        TikToku
+                                    </a>
+                                    .
                                 </p>
                                 <p>Dołącz do społeczności szkoły językowej rozmowni.pl</p>
                             </div>
@@ -74,25 +87,41 @@ export default function Contact() {
                                     <p>Social media</p>
                                     <ul className="list-inline contact-socials">
                                         <li className="list-inline-item">
-                                            <a href="https://www.facebook.com/Rozmownipl-141305311401481">
+                                            <a
+                                                href="https://www.facebook.com/Rozmownipl-141305311401481"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
                                         </li>
                                         <li className="list-inline-item">
-                                            <a href="https://www.instagram.com/rozmowni.pl/">
+                                            <a
+                                                href="https://www.instagram.com/rozmowni.pl/"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faInstagram} />
                                             </a>
                                         </li>
                                         <li className="list-inline-item">
-                                            <a href="https://www.tiktok.com/@rozmowni.pl">
+                                            <a
+                                                href="https://www.tiktok.com/@rozmowni.pl"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faTiktok} />
                                             </a>
                                         </li>
                                         <li className="list-inline-item">
-                                            <a href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/">
+                                            <a
+                                                href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faLinkedin} />
                                             </a>

@@ -17,25 +17,33 @@ export default function Footer() {
                             </p>
                             <ul className="list-inline footer-socials">
                                 <li className="list-inline-item">
-                                    <a href="https://www.facebook.com/Rozmownipl-141305311401481">
+                                    <a
+                                        href="https://www.facebook.com/Rozmownipl-141305311401481"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
                                         {' '}
                                         <FontAwesomeIcon icon={faFacebookF} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.instagram.com/rozmowni.pl/">
+                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noopener">
                                         {' '}
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.tiktok.com/@rozmowni.pl">
+                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noopener">
                                         {' '}
                                         <FontAwesomeIcon icon={faTiktok} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/">
+                                    <a
+                                        href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
                                         {' '}
                                         <FontAwesomeIcon icon={faLinkedin} />
                                     </a>

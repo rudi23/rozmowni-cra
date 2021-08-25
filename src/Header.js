@@ -89,21 +89,25 @@ export default function Header() {
 
                         <ul className="header-contact-right d-none d-lg-block">
                             <li>
-                                <a href="https://www.facebook.com/Rozmownipl-141305311401481">
+                                <a
+                                    href="https://www.facebook.com/Rozmownipl-141305311401481"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
                                     <span className="icon">
                                         <FontAwesomeIcon icon={['fab', 'facebook-f']} />
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/rozmowni.pl/">
+                                <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noopener">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={['fab', 'instagram']} />
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.tiktok.com/@rozmowni.pl">
+                                <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noopener">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={['fab', 'tiktok']} />
                                     </span>
