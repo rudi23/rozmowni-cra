@@ -8,10 +8,12 @@ import NotFound from './screens/NotFound';
 import AboutUs from './screens/AboutUs';
 import CoursesIndividual from './screens/CoursesIndividual';
 import CoursesGroup from './screens/CoursesGroup';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
     return (
         <Router>
+            <ScrollToTop />
             <div className="App">
                 <Header />
                 <Switch>
