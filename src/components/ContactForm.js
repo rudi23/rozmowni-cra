@@ -79,7 +79,7 @@ export default function ContactForm() {
                                 {...register('name', { required: true })}
                             />
                             {errors.name?.type === 'required' && (
-                                <div className={styles.error}>Imię i nazwisko jest wymagane</div>
+                                <div className={styles.error}>Imię i nazwisko są wymagane</div>
                             )}
                         </div>
                     </div>
