@@ -1,39 +1,44 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
-import Banner from './Banner';
 import Footer from './Footer';
-import Features from './Features';
-import CoursesIndividual from './CoursesIndividual';
-import CoursesGroup from './CoursesGroup';
-import CoursesSmallGroup from './CoursesSmallGroup';
-import Teachers from './Teachers';
-import Facts from './Facts';
-import Testimonials from './Testimonials';
-import Video from './Video';
-import Idea from './Idea';
-import Conversations from './Conversations';
-import AboutUs from './AboutUs';
-import JoinUs from './JoinUs';
+import Contact from './screens/Contact';
+import Home from './screens/Home';
+import WhyUs from './screens/WhyUs';
+import NotFound from './screens/NotFound';
+import AboutUs from './screens/AboutUs';
+import CoursesIndividual from './screens/CoursesIndividual';
+import CoursesGroup from './screens/CoursesGroup';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Banner />
-      <Features />
-      <Idea />
-      <Conversations />
-      {/*<Video />*/}
-      <CoursesIndividual />
-      <CoursesGroup />
-      <CoursesSmallGroup />
-      <AboutUs />
-      <JoinUs />
-      {/*<Facts />*/}
-      {/*<Teachers />*/}
-      {/*<Testimonials />*/}
-      <Footer />
-    </div>
-  );
+export default function App() {
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/dlaczego-my">
+                        <WhyUs />
+                    </Route>
+                    <Route exact path="/kursy/indywidualne">
+                        <CoursesIndividual />
+                    </Route>
+                    <Route exact path="/kursy/grupowe">
+                        <CoursesGroup />
+                    </Route>
+                    <Route exact path="/kontakt">
+                        <Contact />
+                    </Route>
+                    <Route exact path="/o-nas">
+                        <AboutUs />
+                    </Route>
+                    <Route path="*">
+                        <NotFound />
+                    </Route>
+                </Switch>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
-
-export default App;

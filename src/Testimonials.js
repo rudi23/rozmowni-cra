@@ -18,20 +18,32 @@ export default function Testimonials() {
                             <div className="review-item">
                                 <div className="client-info">
                                     <i className="bi bi-quote"></i>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem aliquid
-                                        pariatur rerum. Deserunt, praesentium.
-                                        Adipisci, voluptates nihil debitis</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem
+                                        aliquid pariatur rerum. Deserunt, praesentium. Adipisci, voluptates nihil
+                                        debitis
+                                    </p>
                                     <div className="rating">
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="client-desc">
                                     <div className="client-img">
-                                        <img src="assets/images/clients/test-1.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/images/clients/test-1.jpg" alt="" className="img-fluid" />
                                     </div>
                                     <div className="client-text">
                                         <h4>John Doe</h4>
@@ -43,20 +55,32 @@ export default function Testimonials() {
                             <div className="review-item">
                                 <div className="client-info">
                                     <i className="bi bi-quote"></i>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem aliquid
-                                        pariatur rerum. Deserunt, praesentium.
-                                        Adipisci, voluptates nihil debitis</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem
+                                        aliquid pariatur rerum. Deserunt, praesentium. Adipisci, voluptates nihil
+                                        debitis
+                                    </p>
                                     <div className="rating">
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="client-desc">
                                     <div className="client-img">
-                                        <img src="assets/images/clients/test-2.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/images/clients/test-2.jpg" alt="" className="img-fluid" />
                                     </div>
                                     <div className="client-text">
                                         <h4>John Doe</h4>
@@ -65,24 +89,35 @@ export default function Testimonials() {
                                 </div>
                             </div>
 
-
                             <div className="review-item">
                                 <div className="client-info">
                                     <i className="bi bi-quote"></i>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem aliquid
-                                        pariatur rerum. Deserunt, praesentium.
-                                        Adipisci, voluptates nihil debitis</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eius autem
+                                        aliquid pariatur rerum. Deserunt, praesentium. Adipisci, voluptates nihil
+                                        debitis
+                                    </p>
                                     <div className="rating">
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
-                                        <a href="#"><i className="fa fa-star"></i></a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i className="fa fa-star"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="client-desc">
                                     <div className="client-img">
-                                        <img src="assets/images/clients/test-3.jpg" alt="" className="img-fluid" />
+                                        <img src="/assets/images/clients/test-3.jpg" alt="" className="img-fluid" />
                                     </div>
                                     <div className="client-text">
                                         <h4>John Doe</h4>
@@ -95,5 +130,5 @@ export default function Testimonials() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
