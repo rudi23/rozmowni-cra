@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { useState } from 'react';
 import styles from './ContactForm.module.scss';
 
@@ -20,15 +21,32 @@ const sendForm = async (data) =>
 
 export default function ContactForm() {
     const [isSent, setSent] = useState(false);
+    const [isSentError, setSentError] = useState(false);
     const {
+        reset,
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
+    const { executeRecaptcha } = useGoogleReCaptcha();
 
     const onSubmit = async (data) => {
-        await sendForm(data);
-        setSent(true);
+        if (!executeRecaptcha) {
+            return;
+        }
+
+        const token = await executeRecaptcha('sendForm');
+        if (token) {
+            setSent(false);
+            setSentError(false);
+            const res = await sendForm(data);
+            if (res.ok) {
+                setSent(true);
+                reset();
+            } else {
+                setSentError(true);
+            }
+        }
     };
 
     return (
@@ -37,6 +55,13 @@ export default function ContactForm() {
                 <div className="col-lg-12 col-12">
                     <div className="alert alert-success contact__msg form-group" role="alert">
                         Dziękujemy za kontakt! Twoja wiadomość została pomyślnie wysłana!
+                    </div>
+                </div>
+            )}
+            {isSentError && (
+                <div className="col-lg-12 col-12">
+                    <div className="alert alert-danger contact__msg form-group" role="alert">
+                        Coś poszło nie tak - nie można wysłać wiadomości. Skontaktuj się telefonicznie.
                     </div>
                 </div>
             )}
@@ -119,7 +144,7 @@ export default function ContactForm() {
                                 {...register('message', { required: true })}
                             />
                             {errors.message?.type === 'required' && (
-                                <div className={styles.error}>Treść wiadomośi jest wymagana</div>
+                                <div className={styles.error}>Treść wiadomości jest wymagana</div>
                             )}
                         </div>
                     </div>
