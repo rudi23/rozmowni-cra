@@ -19,18 +19,15 @@ const sendForm = async (data) =>
     });
 
 export default function ContactForm() {
+    const [isSent, setSent] = useState(false);
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
-    const [isSent, setSent] = useState(false);
 
     const onSubmit = async (data) => {
         await sendForm(data);
-        console.log(data);
-        console.log(setSent);
-        console.log(typeof setSent);
         setSent(true);
     };
 
@@ -39,7 +36,7 @@ export default function ContactForm() {
             {isSent && (
                 <div className="col-lg-12 col-12">
                     <div className="alert alert-success contact__msg form-group" role="alert">
-                        Twoja wiadomość została pomyślnie wysłana
+                        Dziękujemy za kontakt! Twoja wiadomość została pomyślnie wysłana!
                     </div>
                 </div>
             )}
