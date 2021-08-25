@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import '../components/Section';
 import SectionHeading from '../components/SectionHeading';
 import Section from '../components/Section';
-import './Contact.css';
+import ContactForm from '../components/ContactForm';
 import PageHeader from '../components/PageHeader';
+import './Contact.css';
 
 export default function Contact() {
     return (
@@ -106,91 +105,7 @@ export default function Contact() {
 
                     <div className="col-lg-8">
                         <p className="contact-item-header">Skontaktuj się z nami przez formularz kontaktowy</p>
-                        <form className="contact__form form-row " method="POST" action="mail.php" id="contactForm">
-                            {/*<div className="row">*/}
-                            {/*    <div className="col-12">*/}
-                            {/*        <div*/}
-                            {/*            className="alert alert-success contact__msg"*/}
-                            {/*            // style="display: none"*/}
-                            {/*            role="alert"*/}
-                            {/*        >*/}
-                            {/*            Your message was sent successfully.*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            className="form-control"
-                                            placeholder="Imię i nazwisko"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="phone"
-                                            id="phone"
-                                            className="form-control"
-                                            placeholder="Numer telefonu"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="email"
-                                            id="email"
-                                            className="form-control"
-                                            placeholder="Adres email"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            name="subject"
-                                            id="subject"
-                                            className="form-control"
-                                            placeholder="Temat"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <textarea
-                                            id="message"
-                                            name="message"
-                                            cols="30"
-                                            rows="6"
-                                            className="form-control"
-                                            placeholder="Wiadomość"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-12">
-                                <div className="mt-4 text-right">
-                                    <button className="btn btn-main" type="submit">
-                                        Wyślij wiadomość
-                                        <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </Section>
