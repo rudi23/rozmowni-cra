@@ -20,20 +20,20 @@ export default function Footer() {
                                     <a
                                         href="https://www.facebook.com/Rozmownipl-141305311401481"
                                         target="_blank"
-                                        rel="noopener"
+                                        rel="noreferrer"
                                     >
                                         {' '}
                                         <FontAwesomeIcon icon={faFacebookF} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noopener">
+                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noreferrer">
                                         {' '}
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noopener">
+                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noreferrer">
                                         {' '}
                                         <FontAwesomeIcon icon={faTiktok} />
                                     </a>
@@ -42,7 +42,7 @@ export default function Footer() {
                                     <a
                                         href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"
                                         target="_blank"
-                                        rel="noopener"
+                                        rel="noreferrer"
                                     >
                                         {' '}
                                         <FontAwesomeIcon icon={faLinkedin} />

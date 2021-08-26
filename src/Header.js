@@ -92,7 +92,7 @@ export default function Header() {
                                 <a
                                     href="https://www.facebook.com/Rozmownipl-141305311401481"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="noreferrer"
                                 >
                                     <span className="icon">
                                         <FontAwesomeIcon icon={['fab', 'facebook-f']} />
@@ -100,14 +100,14 @@ export default function Header() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noopener">
+                                <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noreferrer">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={['fab', 'instagram']} />
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noopener">
+                                <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noreferrer">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={['fab', 'tiktok']} />
                                     </span>

@@ -239,15 +239,19 @@ export default function CoursesIndividual() {
                                     </p>
                                     <p>
                                         Zajęcia online odbywają się poprzez platformę{' '}
-                                        <a href="https://zoom.us/" rel="noopener nofollow">
+                                        <a href="https://zoom.us/" target="_blank" rel="noreferrer nofollow">
                                             Zoom
                                         </a>
                                         ,{' '}
-                                        <a href="https://www.skype.com/" rel="noopener nofollow">
+                                        <a href="https://www.skype.com/" target="_blank" rel="noreferrer nofollow">
                                             Skype
                                         </a>{' '}
                                         lub{' '}
-                                        <a href="https://www.microsoft.com/microsoft-teams/" rel="noopener nofollow">
+                                        <a
+                                            href="https://www.microsoft.com/microsoft-teams/"
+                                            target="_blank"
+                                            rel="noreferrer nofollow"
+                                        >
                                             Teams
                                         </a>
                                         .

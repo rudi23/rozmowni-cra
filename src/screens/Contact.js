@@ -24,16 +24,16 @@ export default function Contact() {
                                     <a
                                         href="https://www.facebook.com/Rozmownipl-141305311401481"
                                         target="_blank"
-                                        rel="noopener"
+                                        rel="noreferrer"
                                     >
                                         Facebooku
                                     </a>
                                     ,{' '}
-                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noopener">
+                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noreferrer">
                                         Instagramie
                                     </a>{' '}
                                     oraz{' '}
-                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noopener">
+                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noreferrer">
                                         TikToku
                                     </a>
                                     .
@@ -90,7 +90,7 @@ export default function Contact() {
                                             <a
                                                 href="https://www.facebook.com/Rozmownipl-141305311401481"
                                                 target="_blank"
-                                                rel="noopener"
+                                                rel="noreferrer"
                                             >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faFacebookF} />
@@ -100,7 +100,7 @@ export default function Contact() {
                                             <a
                                                 href="https://www.instagram.com/rozmowni.pl/"
                                                 target="_blank"
-                                                rel="noopener"
+                                                rel="noreferrer"
                                             >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faInstagram} />
@@ -110,7 +110,7 @@ export default function Contact() {
                                             <a
                                                 href="https://www.tiktok.com/@rozmowni.pl"
                                                 target="_blank"
-                                                rel="noopener"
+                                                rel="noreferrer"
                                             >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faTiktok} />
@@ -120,7 +120,7 @@ export default function Contact() {
                                             <a
                                                 href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"
                                                 target="_blank"
-                                                rel="noopener"
+                                                rel="noreferrer"
                                             >
                                                 {' '}
                                                 <FontAwesomeIcon icon={faLinkedin} />
