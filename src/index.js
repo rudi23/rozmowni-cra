@@ -1,6 +1,5 @@
 import React from 'react';
 import { hydrate, render } from 'react-dom';
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,15 +8,7 @@ const rootElement = document.getElementById('root');
 
 const Application = () => (
     <React.StrictMode>
-        <GoogleReCaptchaProvider
-            reCaptchaKey="6LefiSQcAAAAAOcESFE5YPnjSfDZUgnA0LNhZ3Jp"
-            language="pl"
-            scriptProps={{
-                defer: true,
-            }}
-        >
-            <App />
-        </GoogleReCaptchaProvider>
+        <App />
     </React.StrictMode>
 );
 

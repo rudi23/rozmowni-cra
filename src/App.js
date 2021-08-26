@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import CookieConsent from 'react-cookie-consent';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import Header from './Header';
 import Footer from './Footer';
 import Contact from './screens/Contact';
@@ -31,7 +32,15 @@ export default function App() {
                         <CoursesGroup />
                     </Route>
                     <Route exact path="/kontakt">
-                        <Contact />
+                        <GoogleReCaptchaProvider
+                            reCaptchaKey="6LefiSQcAAAAAOcESFE5YPnjSfDZUgnA0LNhZ3Jp"
+                            language="pl"
+                            scriptProps={{
+                                defer: true,
+                            }}
+                        >
+                            <Contact />
+                        </GoogleReCaptchaProvider>
                     </Route>
                     <Route exact path="/o-nas">
                         <AboutUs />
