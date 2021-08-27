@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
+import { routeNames, routeMap } from '../routes';
 import styles from './Banner.module.scss';
 
 export default function Banner() {
@@ -23,7 +24,7 @@ export default function Banner() {
                             <h1>Mów swobodnie po angielsku!</h1>
                             <h2>Indywidualne oraz grupowe kursy online</h2>
                             <Link
-                                to="/kontakt"
+                                to={routeMap[routeNames.CONTACT]}
                                 className="btn btn-main mt-4"
                                 onClick={() => trackClick(events.HOME_BANNER_CLICK_CONTACT)}
                             >

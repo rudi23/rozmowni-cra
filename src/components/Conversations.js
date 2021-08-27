@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
+import { routeNames, routeMap } from '../routes';
 import SectionHeading from './SectionHeading';
 import Section from './Section';
 import Accordion from './Accordion';
@@ -71,7 +72,7 @@ export default function Conversations() {
                     />
 
                     <Link
-                        to="/kontakt"
+                        to={routeMap[routeNames.CONTACT]}
                         className="btn btn-main mt-4"
                         onClick={() => trackClick(events.HOME_CONVERSATIONS_CLICK_CONTACT)}
                     >

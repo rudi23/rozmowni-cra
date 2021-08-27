@@ -6,6 +6,7 @@ import Accordion from '../components/Accordion';
 import usePageViewTracking from '../hooks/usePageViewTracking';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
+import { routeMap, routeNames } from '../routes';
 import styles from './Course.module.scss';
 
 export default function CoursesGroup() {
@@ -166,7 +167,7 @@ export default function CoursesGroup() {
                                         </div>
                                         <div className="buy-btn">
                                             <Link
-                                                to="/kontakt"
+                                                to={routeMap[routeNames.CONTACT]}
                                                 className="btn btn-main btn-block"
                                                 onClick={() => trackClick(events.GROUP_COURSE_CLICK_ENROLL)}
                                             >

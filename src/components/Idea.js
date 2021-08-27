@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
+import { routeMap, routeNames } from '../routes';
 import Section from './Section';
 import SectionHeading from './SectionHeading';
 
@@ -46,7 +47,7 @@ export default function Idea() {
                     </ul>
 
                     <Link
-                        to="/kontakt"
+                        to={routeMap[routeNames.CONTACT]}
                         className="btn btn-main mt-4"
                         onClick={() => trackClick(events.HOME_IDEA_CLICK_CONTACT)}
                     >

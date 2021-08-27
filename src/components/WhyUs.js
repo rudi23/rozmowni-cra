@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
+import { routeMap, routeNames } from '../routes';
 import SectionHeading from './SectionHeading';
 import Section from './Section';
 
@@ -27,7 +28,7 @@ export default function WhyUs() {
                     <p>Dobrze trafiłeś!</p>
 
                     <Link
-                        to="/dlaczego-my"
+                        to={routeMap[routeNames.WHY_US]}
                         className="btn btn-main mt-4"
                         onClick={() => trackClick(events.HOME_WHY_US_CLICK_CONTACT)}
                     >

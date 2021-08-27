@@ -13,6 +13,7 @@ import CoursesIndividual from './screens/CoursesIndividual';
 import CoursesGroup from './screens/CoursesGroup';
 import ScrollToTop from './components/ScrollToTop';
 import { CookieConsent } from './components/CookieConsent';
+import { routeMap, routeNames } from './routes';
 
 export default function App() {
     return (
@@ -21,19 +22,19 @@ export default function App() {
             <TrackingContextProvider>
                 <Header />
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path={routeMap[routeNames.HOME]}>
                         <Home />
                     </Route>
-                    <Route exact path="/dlaczego-my">
+                    <Route exact path={routeMap[routeNames.WHY_US]}>
                         <WhyUs />
                     </Route>
-                    <Route exact path="/kursy/indywidualne">
+                    <Route exact path={routeMap[routeNames.INDIVIDUAL_COURSE]}>
                         <CoursesIndividual />
                     </Route>
-                    <Route exact path="/kursy/grupowe">
+                    <Route exact path={routeMap[routeNames.GROUP_COURSE]}>
                         <CoursesGroup />
                     </Route>
-                    <Route exact path="/kontakt">
+                    <Route exact path={routeMap[routeNames.CONTACT]}>
                         <GoogleReCaptchaProvider
                             reCaptchaKey="6LefiSQcAAAAAOcESFE5YPnjSfDZUgnA0LNhZ3Jp"
                             language="pl"
@@ -44,10 +45,10 @@ export default function App() {
                             <Contact />
                         </GoogleReCaptchaProvider>
                     </Route>
-                    <Route exact path="/o-nas">
+                    <Route exact path={routeMap[routeNames.ABOUT_US]}>
                         <AboutUs />
                     </Route>
-                    <Route exact path="/polityka-prywatnosci">
+                    <Route exact path={routeMap[routeNames.PRIVACY_POLICY]}>
                         <PrivacyPolicy />
                     </Route>
                     <Route path="*">

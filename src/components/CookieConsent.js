@@ -1,5 +1,6 @@
 import CookieConsentCore from 'react-cookie-consent';
 import { Link } from 'react-router-dom';
+import { routeNames, routeMap } from '../routes';
 
 export function CookieConsent() {
     return (
@@ -32,7 +33,8 @@ export function CookieConsent() {
             <a href="http://ciasteczka.eu/#jak-wylaczyc-ciasteczka" target="_blank" rel="noreferrer">
                 jak je wyłączyć.
             </a>{' '}
-            Więcej możesz przeczytać w naszej <Link to="/polityka-prywatnosci">polityce prywatnosci.</Link>
+            Więcej możesz przeczytać w naszej{' '}
+            <Link to={routeMap[routeNames.PRIVACY_POLICY]}>polityce prywatnosci.</Link>
         </CookieConsentCore>
     );
 }

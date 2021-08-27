@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookF, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import useClickTracking from './hooks/useClickTracking';
 import { events } from './services/tracking';
+import { routeMap, routeNames, routeTitles } from './routes';
 
 library.add(faFacebookF);
 library.add(faInstagram);
@@ -19,7 +20,11 @@ export default function Header() {
             <div className="site-navigation">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container pl-3 pr-3">
-                        <Link className="navbar-brand" to="/" onClick={() => trackClick(events.NAVIGATION_CLICK_LOGO)}>
+                        <Link
+                            className="navbar-brand"
+                            to={routeMap[routeNames.HOME]}
+                            onClick={() => trackClick(events.NAVIGATION_CLICK_LOGO)}
+                        >
                             <img
                                 src="/assets/images/logo-rozmowni.png"
                                 alt="logo rozmowni.pl"
@@ -47,18 +52,26 @@ export default function Header() {
                             <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
                                     <Link
-                                        to="/dlaczego-my"
+                                        to={routeMap[routeNames.WHY_US]}
                                         className="nav-link js-scroll-trigger"
-                                        onClick={() => trackClick(events.NAVIGATION_CLICK_MENU_ITEM('Why us'))}
+                                        onClick={() =>
+                                            trackClick(
+                                                events.NAVIGATION_CLICK_MENU_ITEM(routeTitles[routeNames.WHY_US])
+                                            )
+                                        }
                                     >
                                         Dlaczego my?
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link
-                                        to="/o-nas"
+                                        to={routeMap[routeNames.ABOUT_US]}
                                         className="nav-link js-scroll-trigger"
-                                        onClick={() => trackClick(events.NAVIGATION_CLICK_MENU_ITEM('About us'))}
+                                        onClick={() =>
+                                            trackClick(
+                                                events.NAVIGATION_CLICK_MENU_ITEM(routeTitles[routeNames.ABOUT_US])
+                                            )
+                                        }
                                     >
                                         O nas
                                     </Link>
@@ -79,19 +92,27 @@ export default function Header() {
                                     </div>
                                     <div className="dropdown-menu" aria-labelledby="navbar3">
                                         <Link
-                                            to="/kursy/indywidualne"
+                                            to={routeMap[routeNames.INDIVIDUAL_COURSE]}
                                             className="dropdown-item"
                                             onClick={() =>
-                                                trackClick(events.NAVIGATION_CLICK_MENU_ITEM('Individual course'))
+                                                trackClick(
+                                                    events.NAVIGATION_CLICK_MENU_ITEM(
+                                                        routeTitles[routeNames.INDIVIDUAL_COURSE]
+                                                    )
+                                                )
                                             }
                                         >
                                             Indywidualne
                                         </Link>
                                         <Link
-                                            to="/kursy/grupowe"
+                                            to={routeMap[routeNames.GROUP_COURSE]}
                                             className="dropdown-item"
                                             onClick={() =>
-                                                trackClick(events.NAVIGATION_CLICK_MENU_ITEM('Group course'))
+                                                trackClick(
+                                                    events.NAVIGATION_CLICK_MENU_ITEM(
+                                                        routeTitles[routeNames.GROUP_COURSE]
+                                                    )
+                                                )
                                             }
                                         >
                                             Grupowe
@@ -100,9 +121,13 @@ export default function Header() {
                                 </li>
                                 <li className="nav-item ">
                                     <Link
-                                        to="/kontakt"
+                                        to={routeMap[routeNames.CONTACT]}
                                         className="nav-link"
-                                        onClick={() => trackClick(events.NAVIGATION_CLICK_MENU_ITEM('Contact'))}
+                                        onClick={() =>
+                                            trackClick(
+                                                events.NAVIGATION_CLICK_MENU_ITEM(routeTitles[routeNames.CONTACT])
+                                            )
+                                        }
                                     >
                                         Kontakt
                                     </Link>

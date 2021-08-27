@@ -5,6 +5,7 @@ import { faFacebookF, faInstagram, faLinkedin, faTiktok } from '@fortawesome/fre
 import useClickTracking from './hooks/useClickTracking';
 import { events } from './services/tracking';
 import { decryptEmail } from './utils/string';
+import { routeMap, routeNames, routeTitles } from './routes';
 
 export default function Footer() {
     const trackClick = useClickTracking();
@@ -75,32 +76,42 @@ export default function Footer() {
                             <ul className="list-unstyled footer-links">
                                 <li>
                                     <Link
-                                        to="/dlaczego-my"
-                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Why us'))}
+                                        to={routeMap[routeNames.WHY_US]}
+                                        onClick={() =>
+                                            trackClick(events.FOOTER_CLICK_MENU_ITEM(routeTitles[routeNames.WHY_US]))
+                                        }
                                     >
                                         Dlaczego my?
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/o-nas"
-                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('About us'))}
+                                        to={routeMap[routeNames.ABOUT_US]}
+                                        onClick={() =>
+                                            trackClick(events.FOOTER_CLICK_MENU_ITEM(routeTitles[routeNames.ABOUT_US]))
+                                        }
                                     >
                                         O nas
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/kontakt"
-                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Contact'))}
+                                        to={routeMap[routeNames.CONTACT]}
+                                        onClick={() =>
+                                            trackClick(events.FOOTER_CLICK_MENU_ITEM(routeTitles[routeNames.CONTACT]))
+                                        }
                                     >
                                         Kontakt
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/polityka-prywatnosci"
-                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Privacy policy'))}
+                                        to={routeMap[routeNames.PRIVACY_POLICY]}
+                                        onClick={() =>
+                                            trackClick(
+                                                events.FOOTER_CLICK_MENU_ITEM(routeTitles[routeNames.PRIVACY_POLICY])
+                                            )
+                                        }
                                     >
                                         Polityka prywatności
                                     </Link>
@@ -114,16 +125,24 @@ export default function Footer() {
                             <ul className="list-unstyled footer-links">
                                 <li>
                                     <Link
-                                        to="/kursy/indywidualne"
-                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Individual course'))}
+                                        to={routeMap[routeNames.INDIVIDUAL_COURSE]}
+                                        onClick={() =>
+                                            trackClick(
+                                                events.FOOTER_CLICK_MENU_ITEM(routeNames[routeNames.INDIVIDUAL_COURSE])
+                                            )
+                                        }
                                     >
                                         Zajęcia indywidualne
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/kursy/grupowe"
-                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Group course'))}
+                                        to={routeMap[routeNames.GROUP_COURSE]}
+                                        onClick={() =>
+                                            trackClick(
+                                                events.FOOTER_CLICK_MENU_ITEM(routeTitles[routeNames.GROUP_COURSE])
+                                            )
+                                        }
                                     >
                                         Zajęcia grupowe
                                     </Link>
