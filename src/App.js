@@ -8,6 +8,7 @@ import Home from './screens/Home';
 import WhyUs from './screens/WhyUs';
 import NotFound from './screens/NotFound';
 import AboutUs from './screens/AboutUs';
+import PrivacyPolicy from './screens/PrivacyPolicy';
 import CoursesIndividual from './screens/CoursesIndividual';
 import CoursesGroup from './screens/CoursesGroup';
 import ScrollToTop from './components/ScrollToTop';
@@ -45,6 +46,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/o-nas">
                         <AboutUs />
+                    </Route>
+                    <Route exact path="/polityka-prywatnosci">
+                        <PrivacyPolicy />
                     </Route>
                     <Route path="*">
                         <NotFound />

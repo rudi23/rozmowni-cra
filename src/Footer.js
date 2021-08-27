@@ -97,6 +97,14 @@ export default function Footer() {
                                         Kontakt
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        to="/polityka-prywatnosci"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Privacy policy'))}
+                                    >
+                                        Polityka prywatności
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
