@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import useClickTracking from './hooks/useClickTracking';
 import { events } from './services/tracking';
+import { decryptEmail } from './utils/string';
 
 export default function Footer() {
     const trackClick = useClickTracking();
@@ -131,14 +132,29 @@ export default function Footer() {
                                     <i className="bi bi-headphone" />
                                     <div>
                                         <strong>Telefon</strong>
-                                        (+48) 506 262 227
+                                        <a
+                                            href="tel:+48506262227"
+                                            onClick={() => trackClick(events.FOOTER_CLICK_PHONE)}
+                                        >
+                                            +48 506 262 227
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <i className="bi bi-envelop" />
                                     <div>
                                         <strong>Email</strong>
-                                        kontakt@rozmowni.pl
+                                        {/* eslint-disable jsx-a11y/anchor-is-valid  */}
+                                        <a
+                                            href="#"
+                                            onClick={(e) => {
+                                                decryptEmail('a29udGFrdEByb3ptb3duaS5wbA==');
+                                                trackClick(events.FOOTER_CLICK_EMAIL);
+                                                e.preventDefault();
+                                            }}
+                                        >
+                                            kontakt@rozmowni.pl
+                                        </a>
                                     </div>
                                 </li>
                                 <li>

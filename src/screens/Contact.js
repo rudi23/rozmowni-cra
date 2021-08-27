@@ -8,6 +8,7 @@ import './Contact.css';
 import usePageViewTracking from '../hooks/usePageViewTracking';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
+import { decryptEmail } from '../utils/string';
 
 export default function Contact() {
     usePageViewTracking();
@@ -78,13 +79,32 @@ export default function Contact() {
                             <div className="col-lg-12 col-md-6">
                                 <div className="contact-item">
                                     <p>Napisz do nas</p>
-                                    <h4>kontakt@rozmowni.pl</h4>
+                                    <h4>
+                                        {/* eslint-disable jsx-a11y/anchor-is-valid  */}
+                                        <a
+                                            href="#"
+                                            onClick={(e) => {
+                                                decryptEmail('a29udGFrdEByb3ptb3duaS5wbA==');
+                                                trackClick(events.CONTACT_CLICK_EMAIL);
+                                                e.preventDefault();
+                                            }}
+                                        >
+                                            kontakt@rozmowni.pl
+                                        </a>
+                                    </h4>
                                 </div>
                             </div>
                             <div className="col-lg-12 col-md-6">
                                 <div className="contact-item">
                                     <p>Zadzwoń do nas</p>
-                                    <h4>+48 506 262 227</h4>
+                                    <h4>
+                                        <a
+                                            href="tel:+48506262227"
+                                            onClick={() => trackClick(events.CONTACT_CLICK_PHONE)}
+                                        >
+                                            +48 506 262 227
+                                        </a>
+                                    </h4>
                                 </div>
                             </div>
                             <div className="col-lg-12 col-md-6">

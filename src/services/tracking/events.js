@@ -71,6 +71,16 @@ export const CONTACT_CLICK_LINKEDIN = {
     action: 'Click',
     label: 'TikTok',
 };
+export const CONTACT_CLICK_PHONE = {
+    category: 'Contact',
+    action: 'Click',
+    label: 'Phone',
+};
+export const CONTACT_CLICK_EMAIL = {
+    category: 'Contact',
+    action: 'Click',
+    label: 'Email',
+};
 
 export const FOOTER_CLICK_FB = {
     category: 'Contact',
@@ -91,6 +101,16 @@ export const FOOTER_CLICK_LINKEDIN = {
     category: 'Contact',
     action: 'Click',
     label: 'LinkedIn',
+};
+export const FOOTER_CLICK_EMAIL = {
+    category: 'Contact',
+    action: 'Click',
+    label: 'Email',
+};
+export const FOOTER_CLICK_PHONE = {
+    category: 'Contact',
+    action: 'Click',
+    label: 'Phone',
 };
 export const FOOTER_CLICK_MENU_ITEM = (path) => ({
     category: 'Contact',
