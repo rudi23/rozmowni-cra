@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader';
 import usePageViewTracking from '../hooks/usePageViewTracking';
 import styles from './PrivacyPolicy.module.scss';
 
-export default function WhyUs() {
+export default function PrivacyPolicy() {
     usePageViewTracking();
 
     return (
