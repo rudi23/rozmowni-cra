@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 import Section from './Section';
 import SectionHeading from './SectionHeading';
 
 export default function Idea() {
+    const trackClick = useClickTracking();
+
     return (
         <Section background="gray">
             <div className="row align-items-center">
@@ -41,7 +45,11 @@ export default function Idea() {
                         <li>chcemy być rozmowni</li>
                     </ul>
 
-                    <Link to="/kontakt" className="btn btn-main mt-4">
+                    <Link
+                        to="/kontakt"
+                        className="btn btn-main mt-4"
+                        onClick={() => trackClick(events.HOME_IDEA_CLICK_CONTACT)}
+                    >
                         <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Dołącz do nas
                     </Link>

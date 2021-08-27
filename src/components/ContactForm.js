@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { useState } from 'react';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 import styles from './ContactForm.module.scss';
 
 const sendForm = async (data) =>
@@ -29,6 +31,7 @@ export default function ContactForm() {
         formState: { errors },
     } = useForm();
     const { executeRecaptcha } = useGoogleReCaptcha();
+    const trackClick = useClickTracking();
 
     const onSubmit = async (data) => {
         if (!executeRecaptcha) {
@@ -42,6 +45,7 @@ export default function ContactForm() {
             const res = await sendForm(data);
             if (res.ok) {
                 setSent(true);
+                trackClick(events.CONTACT_SEND_FORM);
                 reset();
             } else {
                 setSentError(true);

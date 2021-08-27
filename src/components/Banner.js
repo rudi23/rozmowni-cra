@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 import styles from './Banner.module.scss';
 
 export default function Banner() {
+    const trackClick = useClickTracking();
+
     return (
         <section className={styles.bannerSection}>
             <div className="container">
@@ -18,7 +22,11 @@ export default function Banner() {
                         <div className={styles.bannerContent}>
                             <h1>Mów swobodnie po angielsku!</h1>
                             <h2>Indywidualne oraz grupowe kursy online</h2>
-                            <Link to="/kontakt" className="btn btn-main mt-4">
+                            <Link
+                                to="/kontakt"
+                                className="btn btn-main mt-4"
+                                onClick={() => trackClick(events.HOME_BANNER_CLICK_CONTACT)}
+                            >
                                 Ucz się razem z nami <FontAwesomeIcon icon={faAngleRight} className="ml-2" />
                             </Link>
                         </div>

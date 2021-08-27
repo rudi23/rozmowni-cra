@@ -3,9 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import PageHeader from '../components/PageHeader';
 import Accordion from '../components/Accordion';
+import usePageViewTracking from '../hooks/usePageViewTracking';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 import styles from './Course.module.scss';
 
 export default function CoursesIndividual() {
+    usePageViewTracking();
+    const trackClick = useClickTracking();
+
     return (
         <>
             <PageHeader title="Kursy indywidualne" />
@@ -173,7 +179,11 @@ export default function CoursesIndividual() {
                                             </h4>
                                         </div>
                                         <div className="buy-btn">
-                                            <Link to="/kontakt" className="btn btn-main btn-block">
+                                            <Link
+                                                to="/kontakt"
+                                                className="btn btn-main btn-block"
+                                                onClick={() => trackClick(events.INDIVIDUAL_COURSE_CLICK_ENROLL)}
+                                            >
                                                 Zapisz się
                                             </Link>
                                         </div>

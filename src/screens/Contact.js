@@ -5,8 +5,14 @@ import Section from '../components/Section';
 import ContactForm from '../components/ContactForm';
 import PageHeader from '../components/PageHeader';
 import './Contact.css';
+import usePageViewTracking from '../hooks/usePageViewTracking';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 
 export default function Contact() {
+    usePageViewTracking();
+    const trackClick = useClickTracking();
+
     return (
         <>
             <PageHeader title="Kontakt" />
@@ -24,16 +30,27 @@ export default function Contact() {
                                     <a
                                         href="https://www.facebook.com/Rozmownipl-141305311401481"
                                         target="_blank"
+                                        onClick={() => trackClick(events.CONTACT_CLICK_FB_TEXT)}
                                         rel="noreferrer"
                                     >
                                         Facebooku
                                     </a>
                                     ,{' '}
-                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.instagram.com/rozmowni.pl/"
+                                        target="_blank"
+                                        onClick={() => trackClick(events.CONTACT_CLICK_IG_TEXT)}
+                                        rel="noreferrer"
+                                    >
                                         Instagramie
                                     </a>{' '}
                                     oraz{' '}
-                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.tiktok.com/@rozmowni.pl"
+                                        target="_blank"
+                                        onClick={() => trackClick(events.CONTACT_CLICK_TIKTOK_TEXT)}
+                                        rel="noreferrer"
+                                    >
                                         TikToku
                                     </a>
                                     .
@@ -89,6 +106,7 @@ export default function Contact() {
                                         <li className="list-inline-item">
                                             <a
                                                 href="https://www.facebook.com/Rozmownipl-141305311401481"
+                                                onClick={() => trackClick(events.CONTACT_CLICK_FB)}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -99,6 +117,7 @@ export default function Contact() {
                                         <li className="list-inline-item">
                                             <a
                                                 href="https://www.instagram.com/rozmowni.pl/"
+                                                onClick={() => trackClick(events.CONTACT_CLICK_IG)}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -109,6 +128,7 @@ export default function Contact() {
                                         <li className="list-inline-item">
                                             <a
                                                 href="https://www.tiktok.com/@rozmowni.pl"
+                                                onClick={() => trackClick(events.CONTACT_CLICK_TIKTOK)}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
@@ -119,6 +139,7 @@ export default function Contact() {
                                         <li className="list-inline-item">
                                             <a
                                                 href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"
+                                                onClick={() => trackClick(events.CONTACT_CLICK_LINKEDIN)}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >

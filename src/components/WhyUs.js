@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 import SectionHeading from './SectionHeading';
 import Section from './Section';
 
 export default function WhyUs() {
+    const trackClick = useClickTracking();
+
     return (
         <Section background="gray">
             <div className="row align-items-center">
@@ -22,7 +26,11 @@ export default function WhyUs() {
                     <p>Masz dość szkolnych testów i ocen.</p>
                     <p>Dobrze trafiłeś!</p>
 
-                    <Link to="/dlaczego-my" className="btn btn-main mt-4">
+                    <Link
+                        to="/dlaczego-my"
+                        className="btn btn-main mt-4"
+                        onClick={() => trackClick(events.HOME_WHY_US_CLICK_CONTACT)}
+                    >
                         <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Sprawdź co nas wyróżnia
                     </Link>

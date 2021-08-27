@@ -1,7 +1,10 @@
 import Section from '../components/Section';
 import PageHeader from '../components/PageHeader';
+import usePageViewTracking from '../hooks/usePageViewTracking';
 
 export default function WhyUs() {
+    usePageViewTracking();
+
     return (
         <>
             <PageHeader title="Dlaczego my?" />

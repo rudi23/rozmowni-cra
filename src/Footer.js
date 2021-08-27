@@ -2,8 +2,12 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import useClickTracking from './hooks/useClickTracking';
+import { events } from './services/tracking';
 
 export default function Footer() {
+    const trackClick = useClickTracking();
+
     return (
         <section className="footer">
             <div className="container">
@@ -21,19 +25,30 @@ export default function Footer() {
                                         href="https://www.facebook.com/Rozmownipl-141305311401481"
                                         target="_blank"
                                         rel="noreferrer"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_FB)}
                                     >
                                         {' '}
                                         <FontAwesomeIcon icon={faFacebookF} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.instagram.com/rozmowni.pl/" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.instagram.com/rozmowni.pl/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_IG)}
+                                    >
                                         {' '}
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.tiktok.com/@rozmowni.pl" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.tiktok.com/@rozmowni.pl"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_TIKTOK)}
+                                    >
                                         {' '}
                                         <FontAwesomeIcon icon={faTiktok} />
                                     </a>
@@ -43,6 +58,7 @@ export default function Footer() {
                                         href="https://www.linkedin.com/in/ma%C5%82gorzata-rudowska-08a29a219/"
                                         target="_blank"
                                         rel="noreferrer"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_LINKEDIN)}
                                     >
                                         {' '}
                                         <FontAwesomeIcon icon={faLinkedin} />
@@ -57,13 +73,28 @@ export default function Footer() {
                             <h5 className="widget-title">Rozmowni.pl</h5>
                             <ul className="list-unstyled footer-links">
                                 <li>
-                                    <Link to="/dlaczego-my">Dlaczego my?</Link>
+                                    <Link
+                                        to="/dlaczego-my"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Why us'))}
+                                    >
+                                        Dlaczego my?
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/o-nas">O nas</Link>
+                                    <Link
+                                        to="/o-nas"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('About us'))}
+                                    >
+                                        O nas
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/kontakt">Kontakt</Link>
+                                    <Link
+                                        to="/kontakt"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Contact'))}
+                                    >
+                                        Kontakt
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -73,10 +104,20 @@ export default function Footer() {
                             <h5 className="widget-title">Kursy</h5>
                             <ul className="list-unstyled footer-links">
                                 <li>
-                                    <Link to="/kursy/indywidualne">Zajęcia indywidualne</Link>
+                                    <Link
+                                        to="/kursy/indywidualne"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Individual course'))}
+                                    >
+                                        Zajęcia indywidualne
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/kursy/grupowe">Zajęcia grupowe</Link>
+                                    <Link
+                                        to="/kursy/grupowe"
+                                        onClick={() => trackClick(events.FOOTER_CLICK_MENU_ITEM('Group course'))}
+                                    >
+                                        Zajęcia grupowe
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

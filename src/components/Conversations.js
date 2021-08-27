@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import useClickTracking from '../hooks/useClickTracking';
+import { events } from '../services/tracking';
 import SectionHeading from './SectionHeading';
 import Section from './Section';
 import Accordion from './Accordion';
 
 export default function Conversations() {
+    const trackClick = useClickTracking();
+
     return (
         <Section>
             <div className="row align-items-center">
@@ -66,7 +70,11 @@ export default function Conversations() {
                         ]}
                     />
 
-                    <Link to="/kontakt" className="btn btn-main mt-4">
+                    <Link
+                        to="/kontakt"
+                        className="btn btn-main mt-4"
+                        onClick={() => trackClick(events.HOME_CONVERSATIONS_CLICK_CONTACT)}
+                    >
                         <FontAwesomeIcon icon={faCheck} className="mr-2" />
                         Porozmawiaj z nami
                     </Link>
