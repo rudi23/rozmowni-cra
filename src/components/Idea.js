@@ -34,14 +34,12 @@ export default function Idea() {
                         pozwala nam lepiej poznać siebie i otaczający nas świat.
                     </p>
 
-                    <p className="mb-0">
-                        W naszej szkole językowej:
-                        <ul>
-                            <li>chcemy Was poznać</li>
-                            <li>chcemy Was uczyć i uczyć się od Was</li>
-                            <li>chcemy być rozmowni</li>
-                        </ul>
-                    </p>
+                    <p className="mb-0">W naszej szkole językowej:</p>
+                    <ul>
+                        <li>chcemy Was poznać</li>
+                        <li>chcemy Was uczyć i uczyć się od Was</li>
+                        <li>chcemy być rozmowni</li>
+                    </ul>
 
                     <Link to="/kontakt" className="btn btn-main mt-4">
                         <FontAwesomeIcon icon={faCheck} className="mr-2" />

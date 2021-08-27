@@ -6,7 +6,7 @@ import styles from './Accordion.module.scss';
 export default function Accordion({ id = 'accordion', cards }) {
     function renderCard({ id, parentId, items, title, content }) {
         return (
-            <div className={cx('card', styles.card)}>
+            <div className={cx('card', styles.card)} key={id}>
                 <div className={cx('card-header', styles.cardHeader)} id={`heading-${id}`}>
                     <button
                         className="btn-block text-left"
@@ -37,7 +37,7 @@ export default function Accordion({ id = 'accordion', cards }) {
                     {content && <div className={styles.content}>{content} </div>}
                     {items &&
                         items.map((item) => (
-                            <div className={styles.item}>
+                            <div className={styles.item} key={item}>
                                 <div>
                                     <FontAwesomeIcon icon={faCheck} />
                                     <span>{item}</span>
