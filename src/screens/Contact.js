@@ -9,9 +9,11 @@ import usePageViewTracking from '../hooks/usePageViewTracking';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
 import { decryptEmail } from '../utils/string';
+import useMetadata from '../hooks/useMetadata';
 
 export default function Contact() {
     usePageViewTracking();
+    useMetadata();
     const trackClick = useClickTracking();
 
     return (

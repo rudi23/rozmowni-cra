@@ -1,9 +1,11 @@
 import Section from '../components/Section';
 import PageHeader from '../components/PageHeader';
 import usePageViewTracking from '../hooks/usePageViewTracking';
+import useMetadata from '../hooks/useMetadata';
 
 export default function AboutUs() {
     usePageViewTracking();
+    useMetadata();
 
     return (
         <>

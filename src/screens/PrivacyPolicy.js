@@ -1,10 +1,12 @@
 import Section from '../components/Section';
 import PageHeader from '../components/PageHeader';
 import usePageViewTracking from '../hooks/usePageViewTracking';
+import useMetadata from '../hooks/useMetadata';
 import styles from './PrivacyPolicy.module.scss';
 
 export default function PrivacyPolicy() {
     usePageViewTracking();
+    useMetadata();
 
     return (
         <>

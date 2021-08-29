@@ -27,3 +27,7 @@ export const routeMap = {
     [routeNames.CONTACT]: '/kontakt',
     [routeNames.PRIVACY_POLICY]: '/polityka-prywatnosci',
 };
+
+export function resolveRouteName(path) {
+    return Object.entries(routeMap).find(([_key, value]) => value.startsWith(path))?.[0];
+}

@@ -7,10 +7,12 @@ import usePageViewTracking from '../hooks/usePageViewTracking';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
 import { routeMap, routeNames } from '../routes';
+import useMetadata from '../hooks/useMetadata';
 import styles from './Course.module.scss';
 
 export default function CoursesGroup() {
     usePageViewTracking();
+    useMetadata();
     const trackClick = useClickTracking();
 
     return (
@@ -222,7 +224,7 @@ export default function CoursesGroup() {
                                                     <i className="bi bi-graph-bar" />
                                                     Poziom:
                                                 </span>
-                                                A2, B2, C1, C2
+                                                A2, B1, B2, C1, C2
                                             </div>
                                         </li>
                                         <li>
