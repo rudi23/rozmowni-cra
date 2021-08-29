@@ -1,3 +1,7 @@
+// import 'bootstrap/scss/bootstrap.scss';
+import './styles/bootstrap.scss';
+import './styles/style.css';
+import './styles/responsive.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import { TrackingContextProvider } from './contexts/TrackingContext';

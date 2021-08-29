@@ -10,7 +10,7 @@ export default function WhyUs() {
     return (
         <>
             <PageHeader title="Dlaczego my?" />
-            <Section backgsround="gray">
+            <Section>
                 <div className="row">
                     <div className="col-lg-12 col-md-12 order-md-1">
                         <h2 className="mb-3">Ciekawe tematy konwersacji</h2>

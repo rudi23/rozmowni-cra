@@ -50,6 +50,8 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "@react-hook/window-size": "^3.0.7",
+    "bootstrap": "^4.6.0",
     "classnames": "^2.3.1",
     "react": "^17.0.2",
     "react-cookie-consent": "^6.3.0",

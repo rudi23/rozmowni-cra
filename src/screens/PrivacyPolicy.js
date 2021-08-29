@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
     return (
         <>
             <PageHeader title="Polityka prywatności" />
-            <Section backgsround="gray">
+            <Section>
                 <div className={`row ${styles.root}`}>
                     <div className="col-lg-12 col-md-12 order-md-1">
                         <p>

@@ -1,9 +1,20 @@
+import { useState } from 'react';
 import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import styles from './Accordion.module.scss';
 
 export default function Accordion({ id = 'accordion', cards }) {
+    const [collapsedTab, setCollapsedTab] = useState();
+
+    const onClick = (id) => {
+        if (collapsedTab === id) {
+            setCollapsedTab();
+        } else {
+            setCollapsedTab(id);
+        }
+    };
+
     function renderCard({ id, parentId, items, title, content }) {
         return (
             <div className={cx('card', styles.card)} key={id}>
@@ -11,9 +22,10 @@ export default function Accordion({ id = 'accordion', cards }) {
                     <button
                         className="btn-block text-left"
                         type="button"
-                        data-toggle="collapse"
-                        data-target={`#collapse-${id}`}
-                        aria-expanded="false"
+                        onClick={() => onClick(id)}
+                        // data-toggle="collapse"
+                        // data-target={`#collapse-${id}`}
+                        aria-expanded={collapsedTab === id ? true : false}
                         aria-controls={`collapse-${id}`}
                     >
                         <h4>
@@ -30,7 +42,7 @@ export default function Accordion({ id = 'accordion', cards }) {
 
                 <div
                     id={`collapse-${id}`}
-                    className="collapse"
+                    className={`collapse ${collapsedTab === id && 'show'}`}
                     aria-labelledby={`heading-${id}`}
                     data-parent={`#${parentId}`}
                 >

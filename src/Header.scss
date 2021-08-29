@@ -3,11 +3,11 @@
 ----------------------*/
 .site-navigation {
   border-bottom: 1px solid #f5f7fa;
-  padding: 12px 0px;
+  padding: 12px 0;
 }
 
 .navbar {
-  padding: 0px;
+  padding: 0;
 }
 
 .navbar-nav .nav-link {
@@ -76,9 +76,9 @@ DROPDOWN MENU
 .nav-item.dropdown .dropdown-menu {
   transition: all 300ms ease;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05),
-    -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
-  border: 0px;
-  padding: 0px;
+    -2px 0 5px 1px rgba(0, 0, 0, 0.05);
+  border: 0;
+  padding: 0;
   position: absolute;
   border-top: 2px solid #0f8d8c;
   min-width: 220px;
@@ -151,7 +151,7 @@ DROPDOWN MENU
 .header-form .form-control {
   height: 50px;
   background: #f9f9f9;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
 }
 
 .header-form i {
@@ -206,14 +206,6 @@ DROPDOWN MENU
   font-weight: 400;
 }
 
-.search-close {
-  margin-top: 0px;
-}
-
-.search-close:hover {
-  cursor: pointer;
-}
-
 /* Menu Transpaarent */
 .menu-2 .navbar-nav .nav-link {
   text-transform: uppercase;
@@ -226,7 +218,7 @@ DROPDOWN MENU
 
 .nav-tp {
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 12px 0px;
+  padding: 12px 0;
   z-index: 999;
   margin-bottom: -100px;
   position: relative;

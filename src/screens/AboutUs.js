@@ -10,7 +10,7 @@ export default function AboutUs() {
     return (
         <>
             <PageHeader title="O nas" />
-            <Section backgsround="gray">
+            <Section>
                 <div className="row">
                     <div className="col-lg-6 col-md-12">
                         <div className="img-block">
