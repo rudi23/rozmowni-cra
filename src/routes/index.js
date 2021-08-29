@@ -20,10 +20,14 @@ export const routeTitles = {
 
 export const routeMap = {
     [routeNames.HOME]: '/',
-    [routeNames.WHY_US]: '/dlaczego-my',
-    [routeNames.ABOUT_US]: '/o-nas',
-    [routeNames.INDIVIDUAL_COURSE]: '/kursy/indywidualne',
-    [routeNames.GROUP_COURSE]: '/kursy/grupowe',
-    [routeNames.CONTACT]: '/kontakt',
-    [routeNames.PRIVACY_POLICY]: '/polityka-prywatnosci',
+    [routeNames.WHY_US]: '/dlaczego-my/',
+    [routeNames.ABOUT_US]: '/o-nas/',
+    [routeNames.INDIVIDUAL_COURSE]: '/kursy/indywidualne/',
+    [routeNames.GROUP_COURSE]: '/kursy/grupowe/',
+    [routeNames.CONTACT]: '/kontakt/',
+    [routeNames.PRIVACY_POLICY]: '/polityka-prywatnosci/',
 };
+
+export function resolveRouteName(path) {
+    return Object.entries(routeMap).find(([_key, value]) => value.startsWith(path))?.[0];
+}

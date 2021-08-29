@@ -7,10 +7,12 @@ import usePageViewTracking from '../hooks/usePageViewTracking';
 import useClickTracking from '../hooks/useClickTracking';
 import { events } from '../services/tracking';
 import { routeMap, routeNames } from '../routes';
+import useMetadata from '../hooks/useMetadata';
 import styles from './Course.module.scss';
 
 export default function CoursesIndividual() {
     usePageViewTracking();
+    useMetadata();
     const trackClick = useClickTracking();
 
     return (
@@ -22,7 +24,7 @@ export default function CoursesIndividual() {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="course-single-header">
-                                <h3 className="single-course-title">Zajęcia indywidualne z języka angielskiego</h3>
+                                <h2 className="single-course-title">Zajęcia indywidualne z języka angielskiego</h2>
                                 <p>
                                     Lekcje indywidualne można porównać do usługi szycia dokładnie na Twoją miarę.
                                     Podczas zajęć indywidualnych cała uwaga nauczyciela jest skupiona tylko na Tobie i
@@ -56,7 +58,7 @@ export default function CoursesIndividual() {
                             </div>
                             <div className="edutim-single-course-segment edutim-course-topics-wrap">
                                 <div className="edutim-course-details justify-content-between">
-                                    <h4 className="course-title">Rodzaje zajęć</h4>
+                                    <h3 className="course-title">Rodzaje zajęć</h3>
                                     <p>Możesz zdecydować się na jeden z czterech rodzajów zajęć:</p>
                                 </div>
 
@@ -192,7 +194,7 @@ export default function CoursesIndividual() {
                                 </div>
 
                                 <div className="course-widget course-details-info">
-                                    <h4 className="course-title">W skrócie</h4>
+                                    <h3 className="course-title">W skrócie</h3>
                                     <ul>
                                         <li>
                                             <div className="d-flex justify-content-between align-items-center">
@@ -227,7 +229,7 @@ export default function CoursesIndividual() {
                                                     <i className="bi bi-graph-bar" />
                                                     Poziom:
                                                 </span>
-                                                A2, B2, C1, C2
+                                                A2, B1, B2, C1, C2
                                             </div>
                                         </li>
                                         <li>
@@ -243,7 +245,7 @@ export default function CoursesIndividual() {
                                 </div>
 
                                 <div className="course-widget course-metarials">
-                                    <h4 className="course-title">Wymagania</h4>
+                                    <h3 className="course-title">Wymagania</h3>
                                     <p>
                                         Do udziału w lekcji potrzebujesz komputera z kamerką (ewentualnie smartfona),
                                         dostępu do internetu oraz słuchawek z mikrofonem.
